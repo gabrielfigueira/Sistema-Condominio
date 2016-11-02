@@ -20,24 +20,29 @@ namespace Sistema_Condominio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BancoDeDados banco = new BancoDeDados();
+           
+            try {
+                BancoDeDados banco = new BancoDeDados();
 
-            banco.pessoa.Add(new pessoa()
-            {
-                ID = 1,
-                NOME = "Gabriel",
-                CPF = "321321",
-                RG = "312312321",
-                TELEFONE_RESIDENCIAL = "312321",
-                TEL_COMERC = "23112231",
-                CELULAR = "23312321",
-                EMAIL = "gabriel@gabriel.com",
-                NECES_ESPECIAL = true
-            }); 
-                       
-            banco.SaveChanges();
+                banco.pessoa.Add(new pessoa()
+                {
+                    ID = 1,
+                    NOME = "Gabriel",
+                    CPF = "321321",
+                    RG = "312312321",
+                    TELEFONE_RESIDENCIAL = "312321",
+                    TEL_COMERC = "23112231",
+                    CELULAR = "23312321",
+                    EMAIL = "gabriel@gabriel.com",
+                    NECES_ESPECIAL = true
+                });
 
-            MessageBox.Show("Salvei");
+                banco.SaveChanges();
+
+                MessageBox.Show("Salvei");
+            } catch (Exception ex) {
+                MessageBox.Show("Deu Erro");
+            }
 
         }
     }
