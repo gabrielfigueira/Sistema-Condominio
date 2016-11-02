@@ -41,7 +41,7 @@ namespace Sistema_Condominio
 
                 MessageBox.Show("Salvei");
             } catch (Exception ex) {
-                MessageBox.Show("Deu Erro");
+                MessageBox.Show("Deu Erro pakaralho");
             }
 
         }
