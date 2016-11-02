@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,8 +75,33 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\atividade.cs" />
+    <Compile Include="Model\BancoDeDados.cs" />
+    <Compile Include="Model\cargo_corpo_admin.cs" />
+    <Compile Include="Model\corpo_adm.cs" />
+    <Compile Include="Model\enc_corresp.cs" />
+    <Compile Include="Model\feedbacks.cs" />
+    <Compile Include="Model\funcionario.cs" />
+    <Compile Include="Model\grupo_unidade.cs" />
+    <Compile Include="Model\local_reserva.cs" />
+    <Compile Include="Model\morador.cs" />
+    <Compile Include="Model\orcamentos.cs" />
+    <Compile Include="Model\pessoa.cs" />
+    <Compile Include="Model\proprietario.cs" />
+    <Compile Include="Model\relacao_morador.cs" />
+    <Compile Include="Model\reserva.cs" />
+    <Compile Include="Model\tipo_feedbacks.cs" />
+    <Compile Include="Model\tipo_morador.cs" />
+    <Compile Include="Model\tipo_unidade.cs" />
+    <Compile Include="Model\unidade.cs" />
+    <Compile Include="Model\unidade_morador.cs" />
+    <Compile Include="Model\veiculo.cs" />
+    <Compile Include="Model\visita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -97,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
