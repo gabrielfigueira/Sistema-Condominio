@@ -19,13 +19,15 @@ namespace Sistema_Condominio.Model
             unidade_morador = new HashSet<unidade_morador>();
             visita = new HashSet<visita>();
             veiculo = new HashSet<veiculo>();
+            pessoa = new pessoa();
         }
 
         public int ID { get; set; }
 
-        public int TIPO_MORADOR_ID { get; set; }
-
         public int PESSOA_ID { get; set; }
+
+        [StringLength(60)]
+        public string TIPO_MORADOR { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime DATA_INI { get; set; }
@@ -40,8 +42,6 @@ namespace Sistema_Condominio.Model
         public virtual ICollection<feedbacks> feedbacks { get; set; }
 
         public virtual pessoa pessoa { get; set; }
-
-        public virtual tipo_morador tipo_morador { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<relacao_morador> relacao_morador { get; set; }

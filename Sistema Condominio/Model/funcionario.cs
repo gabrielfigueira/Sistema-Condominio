@@ -11,11 +11,10 @@ namespace Sistema_Condominio.Model
     {
         public int ID { get; set; }
 
-        public int ATIVIDADE_ID { get; set; }
-
         public int PESSOA_ID { get; set; }
 
-        public virtual atividade atividade { get; set; }
+        [StringLength(255)]
+        public string ATIVIDADE_FUNCIONARIO { get; set; }
 
         public virtual pessoa pessoa { get; set; }
     }

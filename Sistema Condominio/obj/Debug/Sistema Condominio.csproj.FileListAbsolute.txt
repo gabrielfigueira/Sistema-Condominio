@@ -14,3 +14,4 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources

@@ -11,6 +11,8 @@ namespace Sistema_Condominio.Model
     {
         public int ID { get; set; }
 
+        public int MORADOR_ID { get; set; }
+
         [Required]
         [StringLength(45)]
         public string NOME { get; set; }
@@ -23,8 +25,6 @@ namespace Sistema_Condominio.Model
 
         [Column(TypeName = "date")]
         public DateTime? DATA_PREVISTA { get; set; }
-
-        public int MORADOR_ID { get; set; }
 
         public virtual morador morador { get; set; }
     }

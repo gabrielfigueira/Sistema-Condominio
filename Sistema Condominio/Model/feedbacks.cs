@@ -12,17 +12,16 @@ namespace Sistema_Condominio.Model
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
-        public int TIPO_FEEDBACKS_id { get; set; }
+        public int MORADOR_ID { get; set; }
+
+        [StringLength(60)]
+        public string TIPO_FEEDBACK { get; set; }
 
         [Column(TypeName = "text")]
         [Required]
         [StringLength(65535)]
         public string DESCRICAO { get; set; }
 
-        public int MORADOR_ID { get; set; }
-
         public virtual morador morador { get; set; }
-
-        public virtual tipo_feedbacks tipo_feedbacks { get; set; }
     }
 }
