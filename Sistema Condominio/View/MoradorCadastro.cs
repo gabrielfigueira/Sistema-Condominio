@@ -50,7 +50,9 @@ namespace Sistema_Condominio.View
 
         private void carregaMorador()
         {
+            morador.TIPO_MORADOR                = comboBoxTipoMorador.Text;
             morador.DATA_INI                    = dateTimeDataInicio.Value;
+            morador.DATA_FIM                    = dateTimeDataFim.Value;
             morador.pessoa.NOME                 = textNome.Text;
             morador.pessoa.CPF                  = textCPF.Text;
             morador.pessoa.RG                   = textRG.Text;
@@ -61,6 +63,21 @@ namespace Sistema_Condominio.View
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

@@ -21,8 +21,8 @@ namespace Sistema_Condominio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MoradorCadastro moradorForm = new MoradorCadastro();
-            moradorForm.Show();
+            MoradorLista moradorLista = new MoradorLista();
+            moradorLista.Show();
 
         }
     }
