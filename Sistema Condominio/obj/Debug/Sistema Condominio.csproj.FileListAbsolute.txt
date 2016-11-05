@@ -14,6 +14,7 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
+<<<<<<< HEAD
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe.config
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.pdb
@@ -30,3 +31,7 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
+=======
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorLista.resources
+>>>>>>> e744b68c7de8aeb0979c22b0661eff8d38bb1a26

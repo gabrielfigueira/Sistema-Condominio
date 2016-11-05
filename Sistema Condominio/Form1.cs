@@ -1,4 +1,5 @@
 ﻿using Sistema_Condominio.Model;
+using Sistema_Condominio.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace Sistema_Condominio
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            
             try {
                 BancoDeDados banco = new BancoDeDados();
@@ -43,6 +45,10 @@ namespace Sistema_Condominio
             } catch (Exception ex) {
                 MessageBox.Show("Deu Erro");
             }
+=======
+            MoradorLista moradorLista = new MoradorLista();
+            moradorLista.Show();
+>>>>>>> e744b68c7de8aeb0979c22b0661eff8d38bb1a26
 
         }
     }

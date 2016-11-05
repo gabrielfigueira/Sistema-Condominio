@@ -8,26 +8,22 @@ namespace Sistema_Condominio.Model
     public partial class BancoDeDados : DbContext
     {
         public BancoDeDados()
-            : base("name=BancoDeDados")
+            : base("name=BancoDeDados1")
         {
         }
 
-        public virtual DbSet<atividade> atividade { get; set; }
         public virtual DbSet<cargo_corpo_admin> cargo_corpo_admin { get; set; }
         public virtual DbSet<corpo_adm> corpo_adm { get; set; }
         public virtual DbSet<enc_corresp> enc_corresp { get; set; }
         public virtual DbSet<feedbacks> feedbacks { get; set; }
         public virtual DbSet<funcionario> funcionario { get; set; }
         public virtual DbSet<grupo_unidade> grupo_unidade { get; set; }
-        public virtual DbSet<local_reserva> local_reserva { get; set; }
         public virtual DbSet<morador> morador { get; set; }
         public virtual DbSet<orcamentos> orcamentos { get; set; }
         public virtual DbSet<pessoa> pessoa { get; set; }
         public virtual DbSet<proprietario> proprietario { get; set; }
         public virtual DbSet<relacao_morador> relacao_morador { get; set; }
         public virtual DbSet<reserva> reserva { get; set; }
-        public virtual DbSet<tipo_feedbacks> tipo_feedbacks { get; set; }
-        public virtual DbSet<tipo_morador> tipo_morador { get; set; }
         public virtual DbSet<tipo_unidade> tipo_unidade { get; set; }
         public virtual DbSet<unidade> unidade { get; set; }
         public virtual DbSet<unidade_morador> unidade_morador { get; set; }
@@ -36,16 +32,6 @@ namespace Sistema_Condominio.Model
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<atividade>()
-                .Property(e => e.NOME)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<atividade>()
-                .HasMany(e => e.funcionario)
-                .WithRequired(e => e.atividade)
-                .HasForeignKey(e => e.ATIVIDADE_ID)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<cargo_corpo_admin>()
                 .Property(e => e.DESCRICAO)
                 .IsUnicode(false);
@@ -71,7 +57,15 @@ namespace Sistema_Condominio.Model
                 .IsUnicode(false);
 
             modelBuilder.Entity<feedbacks>()
+                .Property(e => e.TIPO_FEEDBACK)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<feedbacks>()
                 .Property(e => e.DESCRICAO)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<funcionario>()
+                .Property(e => e.ATIVIDADE_FUNCIONARIO)
                 .IsUnicode(false);
 
             modelBuilder.Entity<grupo_unidade>()
@@ -84,15 +78,9 @@ namespace Sistema_Condominio.Model
                 .HasForeignKey(e => e.UNIDADES_id)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<local_reserva>()
-                .Property(e => e.DESCRICAO)
+            modelBuilder.Entity<morador>()
+                .Property(e => e.TIPO_MORADOR)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<local_reserva>()
-                .HasMany(e => e.reserva)
-                .WithRequired(e => e.local_reserva)
-                .HasForeignKey(e => e.LOCAL_RESERVA_ID)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<morador>()
                 .HasMany(e => e.enc_corresp)
@@ -212,25 +200,9 @@ namespace Sistema_Condominio.Model
                 .Property(e => e.DESCRICAO_RESERVA)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<tipo_feedbacks>()
-                .Property(e => e.DESCRICAO)
+            modelBuilder.Entity<reserva>()
+                .Property(e => e.LOCAL_RESERVA)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<tipo_feedbacks>()
-                .HasMany(e => e.feedbacks)
-                .WithRequired(e => e.tipo_feedbacks)
-                .HasForeignKey(e => e.TIPO_FEEDBACKS_id)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<tipo_morador>()
-                .Property(e => e.DESCRICAO)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<tipo_morador>()
-                .HasMany(e => e.morador)
-                .WithRequired(e => e.tipo_morador)
-                .HasForeignKey(e => e.TIPO_MORADOR_ID)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<tipo_unidade>()
                 .Property(e => e.DESCRICAO)
