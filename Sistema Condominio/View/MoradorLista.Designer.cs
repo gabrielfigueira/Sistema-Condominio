@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridListaMorador = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListaMorador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,11 +42,22 @@
             this.dataGridListaMorador.TabIndex = 0;
             this.dataGridListaMorador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MoradorLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 261);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridListaMorador);
             this.Name = "MoradorLista";
             this.Text = "MoradorLista";
@@ -58,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridListaMorador;
+        private System.Windows.Forms.Button button1;
     }
 }

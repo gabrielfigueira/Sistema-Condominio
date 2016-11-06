@@ -9,9 +9,11 @@ namespace Sistema_Condominio.Dao
 {
     class MoradorDAO
     {
+        private pessoa pessoa;
         public void cadastrarMorador(morador morador)
         {
             BancoDeDados banco = new BancoDeDados();
+
             banco.pessoa.Add(morador.pessoa);
             banco.SaveChanges();
             morador.PESSOA_ID = morador.pessoa.ID;

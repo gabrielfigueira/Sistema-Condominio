@@ -16,6 +16,7 @@ namespace Sistema_Condominio.Model
             funcionario = new HashSet<funcionario>();
             morador = new HashSet<morador>();
             proprietario = new HashSet<proprietario>();
+            usuario = new HashSet<usuario>();
         }
 
         public int ID { get; set; }
@@ -60,5 +61,8 @@ namespace Sistema_Condominio.Model
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<proprietario> proprietario { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<usuario> usuario { get; set; }
     }
 }

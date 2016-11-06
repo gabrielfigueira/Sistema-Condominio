@@ -92,6 +92,7 @@
     <Compile Include="Model\tipo_unidade.cs" />
     <Compile Include="Model\unidade.cs" />
     <Compile Include="Model\unidade_morador.cs" />
+    <Compile Include="Model\usuario.cs" />
     <Compile Include="Model\veiculo.cs" />
     <Compile Include="Model\visita.cs" />
     <Compile Include="Program.cs" />
