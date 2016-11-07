@@ -1,20 +1,3 @@
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe.config
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.pdb
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.dll
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\MySql.Data.dll
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\MySql.Data.Entity.EF6.dll
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\MySql.Web.dll
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.xml
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Properties.Resources.resources
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
-<<<<<<< HEAD
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe.config
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.pdb
@@ -25,13 +8,17 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MySql.Da
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MySql.Web.dll
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\EntityFramework.xml
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Properties.Resources.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorLista.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
-=======
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorLista.resources
->>>>>>> e744b68c7de8aeb0979c22b0661eff8d38bb1a26
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFramework.Design.dll
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFramework.dll
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Unidade.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Login.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Index.resources
