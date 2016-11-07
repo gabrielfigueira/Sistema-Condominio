@@ -18,13 +18,11 @@ namespace Sistema_Condominio.Model
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
-        [Required]
         [StringLength(100)]
         public string DESCRICAO { get; set; }
 
         public int QNTD_COMODO { get; set; }
 
-        [Required]
         [StringLength(45)]
         public string ANDAR { get; set; }
 

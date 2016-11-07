@@ -8,7 +8,7 @@ namespace Sistema_Condominio.Model
     public partial class BancoDeDados : DbContext
     {
         public BancoDeDados()
-            : base("name=BancoDeDados1")
+            : base("name=BancoDeDados")
         {
         }
 
@@ -27,6 +27,7 @@ namespace Sistema_Condominio.Model
         public virtual DbSet<tipo_unidade> tipo_unidade { get; set; }
         public virtual DbSet<unidade> unidade { get; set; }
         public virtual DbSet<unidade_morador> unidade_morador { get; set; }
+        public virtual DbSet<usuario> usuario { get; set; }
         public virtual DbSet<veiculo> veiculo { get; set; }
         public virtual DbSet<visita> visita { get; set; }
 
@@ -184,6 +185,12 @@ namespace Sistema_Condominio.Model
                 .HasForeignKey(e => e.PESSOA_ID)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<pessoa>()
+                .HasMany(e => e.usuario)
+                .WithRequired(e => e.pessoa)
+                .HasForeignKey(e => e.PESSOA_ID)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<relacao_morador>()
                 .Property(e => e.GRAU_PARENTESCO)
                 .IsUnicode(false);
@@ -229,6 +236,14 @@ namespace Sistema_Condominio.Model
                 .WithRequired(e => e.unidade)
                 .HasForeignKey(e => e.UNIDADE_ID)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<usuario>()
+                .Property(e => e.USUARIO1)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<usuario>()
+                .Property(e => e.SENHA)
+                .IsUnicode(false);
 
             modelBuilder.Entity<veiculo>()
                 .Property(e => e.MARCA)

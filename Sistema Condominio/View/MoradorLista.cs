@@ -14,7 +14,11 @@ namespace Sistema_Condominio.View
 {
     public partial class MoradorLista : Form
     {
+<<<<<<< HEAD
        // private morador morador;
+=======
+        private morador morador;        
+>>>>>>> 0e2f2b7cd8ad1e13f96cf00fbdf4241caffd14a7
         
         public MoradorLista()
         {
@@ -22,8 +26,8 @@ namespace Sistema_Condominio.View
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {       
-         
+        {
+            
         }
 
         private void MoradorLista_Load(object sender, EventArgs e)
@@ -36,6 +40,12 @@ namespace Sistema_Condominio.View
             BancoDeDados banco = new BancoDeDados();
             var lista = banco.morador.Include(m => m.pessoa).ToList();
             dataGridListaMorador.DataSource = lista;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MoradorCadastro formmorador = new MoradorCadastro();
+            formmorador.Show();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Sistema_Condominio.Model
         [StringLength(100)]
         public string DESCRICAO { get; set; }
 
-        public int QNT_APARTAMENTO { get; set; }
+        public int? QNT_APARTAMENTO { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<unidade> unidade { get; set; }
