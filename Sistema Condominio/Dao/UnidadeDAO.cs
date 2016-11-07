@@ -19,7 +19,7 @@ namespace Sistema_Condominio.Dao
             banco.tipo_unidade.Add(unidade.tipo_unidade);
             banco.SaveChanges();
 
-            unidade.UNIDADES_id = unidade.grupo_unidade.ID;
+            unidade.ID = unidade.grupo_unidade.ID;
             banco.unidade.Add(unidade);
             banco.SaveChanges();
         }

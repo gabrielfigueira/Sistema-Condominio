@@ -14,11 +14,8 @@ namespace Sistema_Condominio.View
 {
     public partial class MoradorLista : Form
     {
-<<<<<<< HEAD
-       // private morador morador;
-=======
         private morador morador;        
->>>>>>> 0e2f2b7cd8ad1e13f96cf00fbdf4241caffd14a7
+
         
         public MoradorLista()
         {

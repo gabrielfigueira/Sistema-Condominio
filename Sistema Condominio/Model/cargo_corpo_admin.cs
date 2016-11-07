@@ -15,7 +15,6 @@ namespace Sistema_Condominio.Model
             corpo_adm = new HashSet<corpo_adm>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]

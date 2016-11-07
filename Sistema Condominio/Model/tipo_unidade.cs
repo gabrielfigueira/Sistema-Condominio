@@ -15,7 +15,6 @@ namespace Sistema_Condominio.Model
             unidade = new HashSet<unidade>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [StringLength(100)]

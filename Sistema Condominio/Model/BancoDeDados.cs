@@ -76,7 +76,7 @@ namespace Sistema_Condominio.Model
             modelBuilder.Entity<grupo_unidade>()
                 .HasMany(e => e.unidade)
                 .WithRequired(e => e.grupo_unidade)
-                .HasForeignKey(e => e.UNIDADES_id)
+                .HasForeignKey(e => e.GRUPO_UNIDADE_ID)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<morador>()

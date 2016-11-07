@@ -14,19 +14,17 @@ namespace Sistema_Condominio.Model
         {
             proprietario = new HashSet<proprietario>();
             unidade_morador = new HashSet<unidade_morador>();
-            grupo_unidade = new grupo_unidade();
             tipo_unidade = new tipo_unidade();
+            grupo_unidade = new grupo_unidade();
         }
-
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
 
         public int ID { get; set; }
 
-        public int UNIDADES_id { get; set; }
-
         public int TIPO_UNIDADE_ID { get; set; }
 
-        public bool? ATIVO { get; set; }      
+        public int GRUPO_UNIDADE_ID { get; set; }
+
+        public bool? ATIVO { get; set; }
 
         public virtual grupo_unidade grupo_unidade { get; set; }
 

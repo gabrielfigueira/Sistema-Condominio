@@ -9,7 +9,6 @@ namespace Sistema_Condominio.Model
     [Table("sistemacondominio.feedbacks")]
     public partial class feedbacks
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int MORADOR_ID { get; set; }
