@@ -41,6 +41,7 @@ namespace Sistema_Condominio.View
                 moradorDao.cadastrarMorador(morador);
 
                 MessageBox.Show("Salvei");
+                Index index = new Index();                
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -50,6 +51,7 @@ namespace Sistema_Condominio.View
 
         private void carregaMorador()
         {
+            morador.pessoa = new pessoa();
             morador.TIPO_MORADOR                = comboBoxTipoMorador.Text;
             morador.DATA_INI                    = dateTimeDataInicio.Value;
             morador.DATA_FIM                    = dateTimeDataFim.Value;
@@ -78,6 +80,11 @@ namespace Sistema_Condominio.View
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MoradorCadastro_Load(object sender, EventArgs e)
         {
 
         }

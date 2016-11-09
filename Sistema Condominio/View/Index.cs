@@ -10,12 +10,15 @@ using MetroFramework.Forms;
 using Sistema_Condominio.Model;
 using Sistema_Condominio.Dao;
 using System.Windows.Forms;
+using System.Data.Entity;
+
 
 namespace Sistema_Condominio.View
 {
     public partial class Index : MetroForm
     {
         private unidade unidade;
+        private Form _formulario;
 
 
         public Index()
@@ -115,7 +118,61 @@ namespace Sistema_Condominio.View
 
         private void Index_Load(object sender, EventArgs e)
         {
+            carregaDadosMorador(); //Carregando dados do morador 
+        }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbUnidade_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextButton3_Click(object sender, EventArgs e)
+        {
+            MoradorCadastro formMorador = new MoradorCadastro();
+            formMorador.Show();
+        }
+
+        private void carregaDadosMorador()
+        {
+            // Carregando dados do morado r listando no datagrid view
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.morador.Include(m => m.pessoa).ToList();
+            dataGridMorador.DataSource = lista;
+        }
+
+        private void dataGridMorador_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void metroTextButtonAlterarMorador_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;                
+                MoradorDAO moradordao = new MoradorDAO();
+                moradordao.excluirMorador(morador);
+                MessageBox.Show("Exclui o Registro");
+                carregaDadosMorador();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btPesquisar_Click(object sender, EventArgs e)
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var parametro_pesquisa = textFieldPesquisarMorador.Text; // Recebo parametro do textfield de pesquisa
+            var pesquisa = banco.morador.Where(m => m.pessoa.NOME.Contains(parametro_pesquisa)).ToList(); // Executa a pesquisa, no caso esta apenas por nome  e listo ela
+            dataGridMorador.DataSource = pesquisa; // atribuo o valor recebido da consulta na lista
         }
     }
 }

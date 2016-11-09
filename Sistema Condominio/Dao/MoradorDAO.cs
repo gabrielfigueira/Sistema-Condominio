@@ -9,7 +9,7 @@ namespace Sistema_Condominio.Dao
 {
     class MoradorDAO
     {
-        private pessoa pessoa;
+        private String _pesquisa;
         public void cadastrarMorador(morador morador)
         {
             BancoDeDados banco = new BancoDeDados();
@@ -21,5 +21,17 @@ namespace Sistema_Condominio.Dao
             banco.SaveChanges();
 
         }
+
+        public void excluirMorador(morador morador)
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var pessoa = banco.pessoa.Find( morador.PESSOA_ID);
+            var mora = banco.morador.Find(morador.ID);
+            banco.morador.Remove(mora);
+            banco.SaveChanges();
+            banco.pessoa.Remove(pessoa);
+            banco.SaveChanges();
+        }
+
     }
 }
