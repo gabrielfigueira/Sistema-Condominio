@@ -19,6 +19,7 @@ namespace Sistema_Condominio.View
     {
         private unidade unidade;
         private Form _formulario;
+        private MoradorDAO moradordao;
 
 
         public Index()
@@ -133,8 +134,9 @@ namespace Sistema_Condominio.View
 
         private void metroTextButton3_Click(object sender, EventArgs e)
         {
-            MoradorCadastro formMorador = new MoradorCadastro();
-            formMorador.Show();
+            MoradorCadastro formMorador = new MoradorCadastro(new morador(),moradordao);
+            formMorador.ShowDialog();
+            carregaDadosMorador();
         }
 
         private void carregaDadosMorador()
@@ -154,7 +156,7 @@ namespace Sistema_Condominio.View
         {
             try
             {
-                var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;                
+                var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
                 MoradorDAO moradordao = new MoradorDAO();
                 moradordao.excluirMorador(morador);
                 MessageBox.Show("Exclui o Registro");
@@ -170,9 +172,22 @@ namespace Sistema_Condominio.View
         private void btPesquisar_Click(object sender, EventArgs e)
         {
             BancoDeDados banco = new BancoDeDados();
+            MoradorDAO moradordao = new MoradorDAO(); //Instancio a Dao
             var parametro_pesquisa = textFieldPesquisarMorador.Text; // Recebo parametro do textfield de pesquisa
-            var pesquisa = banco.morador.Where(m => m.pessoa.NOME.Contains(parametro_pesquisa)).ToList(); // Executa a pesquisa, no caso esta apenas por nome  e listo ela
+            var pesquisa = moradordao.pesquisarMorador(parametro_pesquisa); // Chamo o metodo de pesquisa da dao e Executa a pesquisa, no caso esta apenas por nome  e listo ela
             dataGridMorador.DataSource = pesquisa; // atribuo o valor recebido da consulta na lista
+        }
+
+        private void metroTextButtonAlterarMorador_Click_1(object sender, EventArgs e)
+        {
+            BancoDeDados banco = new BancoDeDados();
+            MoradorDAO moradordao = new MoradorDAO();
+            var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+            var alterar = moradordao.visualizarMorador(morador);
+
+            MoradorCadastro formMorador = new MoradorCadastro(alterar, moradordao); //chama formulario            
+            formMorador.ShowDialog();// Show dialog chama de forma assincrona
+            carregaDadosMorador();
         }
     }
 }

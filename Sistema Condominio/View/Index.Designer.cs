@@ -30,7 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.metroTextButtonAlterarMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroTextButtonExcluirMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.dataGridMorador = new System.Windows.Forms.DataGridView();
             this.metroTextButtonCadastrar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.textFieldPesquisarMorador = new MetroFramework.Controls.MetroTextBox();
@@ -58,6 +58,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.metroTextButtonAlterarMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMorador)).BeginInit();
@@ -83,6 +84,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.metroTextButtonAlterarMorador);
+            this.tabPage1.Controls.Add(this.metroTextButtonExcluirMorador);
             this.tabPage1.Controls.Add(this.dataGridMorador);
             this.tabPage1.Controls.Add(this.metroTextButtonCadastrar);
             this.tabPage1.Controls.Add(this.textFieldPesquisarMorador);
@@ -97,17 +99,17 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // metroTextButtonAlterarMorador
+            // metroTextButtonExcluirMorador
             // 
-            this.metroTextButtonAlterarMorador.Image = null;
-            this.metroTextButtonAlterarMorador.Location = new System.Drawing.Point(110, 258);
-            this.metroTextButtonAlterarMorador.Name = "metroTextButtonAlterarMorador";
-            this.metroTextButtonAlterarMorador.Size = new System.Drawing.Size(75, 23);
-            this.metroTextButtonAlterarMorador.TabIndex = 7;
-            this.metroTextButtonAlterarMorador.Text = "Alterar";
-            this.metroTextButtonAlterarMorador.UseSelectable = true;
-            this.metroTextButtonAlterarMorador.UseVisualStyleBackColor = true;
-            this.metroTextButtonAlterarMorador.Click += new System.EventHandler(this.metroTextButtonAlterarMorador_Click);
+            this.metroTextButtonExcluirMorador.Image = null;
+            this.metroTextButtonExcluirMorador.Location = new System.Drawing.Point(110, 258);
+            this.metroTextButtonExcluirMorador.Name = "metroTextButtonExcluirMorador";
+            this.metroTextButtonExcluirMorador.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButtonExcluirMorador.TabIndex = 7;
+            this.metroTextButtonExcluirMorador.Text = "Excluir";
+            this.metroTextButtonExcluirMorador.UseSelectable = true;
+            this.metroTextButtonExcluirMorador.UseVisualStyleBackColor = true;
+            this.metroTextButtonExcluirMorador.Click += new System.EventHandler(this.metroTextButtonAlterarMorador_Click);
             // 
             // dataGridMorador
             // 
@@ -118,6 +120,7 @@
             this.dataGridMorador.Size = new System.Drawing.Size(636, 212);
             this.dataGridMorador.TabIndex = 6;
             this.dataGridMorador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridMorador_CellContentClick);
+            this.dataGridMorador.DoubleClick += new System.EventHandler(this.metroTextButtonAlterarMorador_Click_1);
             // 
             // metroTextButtonCadastrar
             // 
@@ -439,6 +442,18 @@
             this.htmlLabel1.Text = "Sistema Condominio";
             this.htmlLabel1.Click += new System.EventHandler(this.htmlLabel1_Click);
             // 
+            // metroTextButtonAlterarMorador
+            // 
+            this.metroTextButtonAlterarMorador.Image = null;
+            this.metroTextButtonAlterarMorador.Location = new System.Drawing.Point(211, 258);
+            this.metroTextButtonAlterarMorador.Name = "metroTextButtonAlterarMorador";
+            this.metroTextButtonAlterarMorador.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButtonAlterarMorador.TabIndex = 8;
+            this.metroTextButtonAlterarMorador.Text = "Alterar";
+            this.metroTextButtonAlterarMorador.UseSelectable = true;
+            this.metroTextButtonAlterarMorador.UseVisualStyleBackColor = true;
+            this.metroTextButtonAlterarMorador.Click += new System.EventHandler(this.metroTextButtonAlterarMorador_Click_1);
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,6 +507,7 @@
         private System.Windows.Forms.TabPage tabPage5;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonCadastrar;
         private System.Windows.Forms.DataGridView dataGridMorador;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonExcluirMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonAlterarMorador;
     }
 }

@@ -49,6 +49,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxTipoMorador = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.buttonAlterarMorador = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textNome
@@ -167,7 +168,7 @@
             // 
             // buttonCadastrar
             // 
-            this.buttonCadastrar.Location = new System.Drawing.Point(438, 83);
+            this.buttonCadastrar.Location = new System.Drawing.Point(447, 34);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(119, 35);
             this.buttonCadastrar.TabIndex = 14;
@@ -235,11 +236,22 @@
             this.label10.Text = "Tipo Morador";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // buttonAlterarMorador
+            // 
+            this.buttonAlterarMorador.Location = new System.Drawing.Point(447, 96);
+            this.buttonAlterarMorador.Name = "buttonAlterarMorador";
+            this.buttonAlterarMorador.Size = new System.Drawing.Size(119, 36);
+            this.buttonAlterarMorador.TabIndex = 21;
+            this.buttonAlterarMorador.Text = "Alterar";
+            this.buttonAlterarMorador.UseVisualStyleBackColor = true;
+            this.buttonAlterarMorador.Click += new System.EventHandler(this.buttonAlterarMorador_Click);
+            // 
             // MoradorCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 216);
+            this.Controls.Add(this.buttonAlterarMorador);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBoxTipoMorador);
             this.Controls.Add(this.label9);
@@ -293,5 +305,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBoxTipoMorador;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button buttonAlterarMorador;
     }
 }
