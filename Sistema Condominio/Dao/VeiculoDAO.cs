@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Condominio.Dao
 {
-    class VeiculoDAO
+    public class VeiculoDAO
     {
         private BancoDeDados banco;
 
@@ -37,7 +37,6 @@ namespace Sistema_Condominio.Dao
 
         public veiculo visualizarVeiculo(veiculo veiculo)
         {
-
             var veicu = banco.veiculo.Find(veiculo.ID);
             return veicu;
         }

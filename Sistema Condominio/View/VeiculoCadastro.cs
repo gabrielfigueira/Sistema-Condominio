@@ -17,8 +17,19 @@ namespace Sistema_Condominio.View
     {
         private int morador_id;
         private veiculo veiculo;
+        private VeiculoDAO veiculodao;
+        private string metodo;
+
         public VeiculoCadastro()
         {
+            InitializeComponent();
+        }
+
+        public VeiculoCadastro(veiculo veiculo, VeiculoDAO veiculodao, string metodo) // Sobrecarga de metodo para passar parametro de morador
+        {
+            this.metodo = metodo;
+            this.veiculo = veiculo;
+            this.veiculodao = veiculodao;
             InitializeComponent();
         }
 
@@ -65,6 +76,16 @@ namespace Sistema_Condominio.View
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void preencheFormularioVeiculo()
+        {
+            metroTextBoxMoradorNome.Text = veiculo.morador.pessoa.NOME;
+            textBoxMarca.Text            = veiculo.MARCA;
+            textBoxModelo.Text           = veiculo.MODELO;
+            textBoxCor.Text              = veiculo.COR;
+            textBoxNrPlaca.Text          = veiculo.N_PLACA;
+            textBoxVagaAlugada.Text      = veiculo.VAGA_ALUGADA.ToString();
+
         }
     }
 }

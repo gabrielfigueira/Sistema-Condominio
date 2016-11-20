@@ -227,7 +227,14 @@ namespace Sistema_Condominio.View
 
         private void metroTextButton3_Click_1(object sender, EventArgs e)
         {
-            
+            BancoDeDados banco = new BancoDeDados();
+            VeiculoDAO veiculodao = new VeiculoDAO();
+            var veiculo = (veiculo)dataGridVeiculo.CurrentRow.DataBoundItem;
+            var alterar = veiculodao.visualizarVeiculo(veiculo);
+
+            VeiculoCadastro formVeiculo = new VeiculoCadastro(alterar, veiculodao, "alterar"); //chama formulario            
+            formVeiculo.ShowDialog();// Show dialog chama de forma assincrona
+            carregaDadosVeiculos();
         }
     }
 }
