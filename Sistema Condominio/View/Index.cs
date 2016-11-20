@@ -58,8 +58,6 @@ namespace Sistema_Condominio.View
                 MessageBox.Show(ex.Message);
             }
 
-
-
         }
 
 
@@ -75,11 +73,7 @@ namespace Sistema_Condominio.View
 
            
         }
-
-
-
-
-
+        
 
         private void cbTipoImovel_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -119,6 +113,7 @@ namespace Sistema_Condominio.View
         private void Index_Load(object sender, EventArgs e)
         {
             carregaDadosMorador(); //Carregando dados do morador 
+            carregaDadosVeiculos(); // Carregar Dados Veiculo
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -133,17 +128,9 @@ namespace Sistema_Condominio.View
 
         private void metroTextButton3_Click(object sender, EventArgs e)
         {
-            MoradorCadastro formMorador = new MoradorCadastro(new morador(), moradordao);
+            MoradorCadastro formMorador = new MoradorCadastro(new morador(), moradordao, "cadastrar");
             formMorador.ShowDialog();
             carregaDadosMorador();
-        }
-
-        private void carregaDadosMorador()
-        {
-            // Carregando dados do morado r listando no datagrid view
-            BancoDeDados banco = new BancoDeDados();
-            var lista = banco.morador.Include(m => m.pessoa).ToList();
-            dataGridMorador.DataSource = lista;
         }
 
         private void dataGridMorador_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -184,7 +171,7 @@ namespace Sistema_Condominio.View
             var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
             var alterar = moradordao.visualizarMorador(morador);
 
-            MoradorCadastro formMorador = new MoradorCadastro(alterar, moradordao); //chama formulario            
+            MoradorCadastro formMorador = new MoradorCadastro(alterar, moradordao, "alterar"); //chama formulario            
             formMorador.ShowDialog();// Show dialog chama de forma assincrona
             carregaDadosMorador();
         }
@@ -198,6 +185,49 @@ namespace Sistema_Condominio.View
         {
             VeiculoCadastro veiculocadastro = new VeiculoCadastro();
             veiculocadastro.ShowDialog();
+            carregaDadosVeiculos();
+        }
+
+        private void carregaDadosMorador()
+        {
+            // Carregando dados do morado r listando no datagrid view
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.morador.Include(m => m.pessoa).ToList();
+            dataGridMorador.DataSource = lista;
+        }
+
+        private void carregaDadosVeiculos()
+        {
+            // Carregando dados do morado r listando no datagrid view
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.veiculo.ToList();
+            dataGridVeiculo.DataSource = lista;
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void metroTextButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var veiculo = (veiculo)dataGridVeiculo.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
+                VeiculoDAO veiculodao = new VeiculoDAO();
+                veiculodao.excluirVeiculo(veiculo);
+                MessageBox.Show("Exclui o Registro");
+                carregaDadosVeiculos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void metroTextButton3_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

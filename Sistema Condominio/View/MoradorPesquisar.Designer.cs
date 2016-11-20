@@ -41,6 +41,7 @@
             this.dataGridMorador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridMorador.Location = new System.Drawing.Point(23, 90);
             this.dataGridMorador.Name = "dataGridMorador";
+            this.dataGridMorador.ReadOnly = true;
             this.dataGridMorador.Size = new System.Drawing.Size(636, 212);
             this.dataGridMorador.TabIndex = 9;
             // 

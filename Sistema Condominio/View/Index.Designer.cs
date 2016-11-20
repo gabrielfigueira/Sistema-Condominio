@@ -56,10 +56,10 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.metroTextButton3 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
-            this.metroTextButton4 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.metroTextButton5 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.TextButtonAletarVeiculo = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.TextButtonExcluirVeiculo = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.dataGridVeiculo = new System.Windows.Forms.DataGridView();
+            this.TextButtonCadastrarMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextButton6 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -74,7 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbUnidade.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVeiculo)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -138,6 +138,7 @@
             this.dataGridMorador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridMorador.Location = new System.Drawing.Point(6, 40);
             this.dataGridMorador.Name = "dataGridMorador";
+            this.dataGridMorador.ReadOnly = true;
             this.dataGridMorador.Size = new System.Drawing.Size(636, 212);
             this.dataGridMorador.TabIndex = 6;
             this.dataGridMorador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridMorador_CellContentClick);
@@ -421,10 +422,10 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.metroTextButton3);
-            this.tabPage3.Controls.Add(this.metroTextButton4);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.metroTextButton5);
+            this.tabPage3.Controls.Add(this.TextButtonAletarVeiculo);
+            this.tabPage3.Controls.Add(this.TextButtonExcluirVeiculo);
+            this.tabPage3.Controls.Add(this.dataGridVeiculo);
+            this.tabPage3.Controls.Add(this.TextButtonCadastrarMorador);
             this.tabPage3.Controls.Add(this.metroTextBox1);
             this.tabPage3.Controls.Add(this.metroTextButton6);
             this.tabPage3.Controls.Add(this.listView2);
@@ -436,48 +437,52 @@
             this.tabPage3.Text = "Veículos";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // metroTextButton3
+            // TextButtonAletarVeiculo
             // 
-            this.metroTextButton3.Image = null;
-            this.metroTextButton3.Location = new System.Drawing.Point(211, 258);
-            this.metroTextButton3.Name = "metroTextButton3";
-            this.metroTextButton3.Size = new System.Drawing.Size(75, 23);
-            this.metroTextButton3.TabIndex = 15;
-            this.metroTextButton3.Text = "Alterar";
-            this.metroTextButton3.UseSelectable = true;
-            this.metroTextButton3.UseVisualStyleBackColor = true;
+            this.TextButtonAletarVeiculo.Image = null;
+            this.TextButtonAletarVeiculo.Location = new System.Drawing.Point(211, 258);
+            this.TextButtonAletarVeiculo.Name = "TextButtonAletarVeiculo";
+            this.TextButtonAletarVeiculo.Size = new System.Drawing.Size(75, 23);
+            this.TextButtonAletarVeiculo.TabIndex = 15;
+            this.TextButtonAletarVeiculo.Text = "Alterar";
+            this.TextButtonAletarVeiculo.UseSelectable = true;
+            this.TextButtonAletarVeiculo.UseVisualStyleBackColor = true;
+            this.TextButtonAletarVeiculo.Click += new System.EventHandler(this.metroTextButton3_Click_1);
             // 
-            // metroTextButton4
+            // TextButtonExcluirVeiculo
             // 
-            this.metroTextButton4.Image = null;
-            this.metroTextButton4.Location = new System.Drawing.Point(110, 258);
-            this.metroTextButton4.Name = "metroTextButton4";
-            this.metroTextButton4.Size = new System.Drawing.Size(75, 23);
-            this.metroTextButton4.TabIndex = 14;
-            this.metroTextButton4.Text = "Excluir";
-            this.metroTextButton4.UseSelectable = true;
-            this.metroTextButton4.UseVisualStyleBackColor = true;
+            this.TextButtonExcluirVeiculo.Image = null;
+            this.TextButtonExcluirVeiculo.Location = new System.Drawing.Point(110, 258);
+            this.TextButtonExcluirVeiculo.Name = "TextButtonExcluirVeiculo";
+            this.TextButtonExcluirVeiculo.Size = new System.Drawing.Size(75, 23);
+            this.TextButtonExcluirVeiculo.TabIndex = 14;
+            this.TextButtonExcluirVeiculo.Text = "Excluir";
+            this.TextButtonExcluirVeiculo.UseSelectable = true;
+            this.TextButtonExcluirVeiculo.UseVisualStyleBackColor = true;
+            this.TextButtonExcluirVeiculo.Click += new System.EventHandler(this.metroTextButton4_Click);
             // 
-            // dataGridView2
+            // dataGridVeiculo
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 40);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(636, 212);
-            this.dataGridView2.TabIndex = 13;
+            this.dataGridVeiculo.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
+            this.dataGridVeiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVeiculo.Location = new System.Drawing.Point(6, 40);
+            this.dataGridVeiculo.Name = "dataGridVeiculo";
+            this.dataGridVeiculo.ReadOnly = true;
+            this.dataGridVeiculo.Size = new System.Drawing.Size(636, 212);
+            this.dataGridVeiculo.TabIndex = 13;
+            this.dataGridVeiculo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // metroTextButton5
+            // TextButtonCadastrarMorador
             // 
-            this.metroTextButton5.Image = null;
-            this.metroTextButton5.Location = new System.Drawing.Point(6, 258);
-            this.metroTextButton5.Name = "metroTextButton5";
-            this.metroTextButton5.Size = new System.Drawing.Size(75, 23);
-            this.metroTextButton5.TabIndex = 12;
-            this.metroTextButton5.Text = "Cadastrar";
-            this.metroTextButton5.UseSelectable = true;
-            this.metroTextButton5.UseVisualStyleBackColor = true;
-            this.metroTextButton5.Click += new System.EventHandler(this.metroTextButton5_Click);
+            this.TextButtonCadastrarMorador.Image = null;
+            this.TextButtonCadastrarMorador.Location = new System.Drawing.Point(6, 258);
+            this.TextButtonCadastrarMorador.Name = "TextButtonCadastrarMorador";
+            this.TextButtonCadastrarMorador.Size = new System.Drawing.Size(75, 23);
+            this.TextButtonCadastrarMorador.TabIndex = 12;
+            this.TextButtonCadastrarMorador.Text = "Cadastrar";
+            this.TextButtonCadastrarMorador.UseSelectable = true;
+            this.TextButtonCadastrarMorador.UseVisualStyleBackColor = true;
+            this.TextButtonCadastrarMorador.Click += new System.EventHandler(this.metroTextButton5_Click);
             // 
             // metroTextBox1
             // 
@@ -543,7 +548,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(678, 531);
+            this.tabPage5.Size = new System.Drawing.Size(663, 314);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Funcionários";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -567,7 +572,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 680);
+            this.ClientSize = new System.Drawing.Size(705, 467);
             this.Controls.Add(this.htmlLabel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Index";
@@ -582,7 +587,7 @@
             this.gbUnidade.ResumeLayout(false);
             this.gbUnidade.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVeiculo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,10 +625,10 @@
         private System.Windows.Forms.DataGridView dataGridMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonExcluirMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonAlterarMorador;
-        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton3;
-        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton5;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton TextButtonAletarVeiculo;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton TextButtonExcluirVeiculo;
+        private System.Windows.Forms.DataGridView dataGridVeiculo;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton TextButtonCadastrarMorador;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton6;
         private System.Windows.Forms.ListView listView2;

@@ -16,14 +16,16 @@ namespace Sistema_Condominio.View
     {
         private morador morador;
         private MoradorDAO moradordao;
+        public string metodo;
         public MoradorCadastro()
         {
             InitializeComponent();
         }
         
 
-        public MoradorCadastro(morador morador, MoradorDAO moradordao) // Sobrecarga de metodo para passar parametro de morador
+        public MoradorCadastro(morador morador, MoradorDAO moradordao, string metodo) // Sobrecarga de metodo para passar parametro de morador
         {
+            this.metodo = metodo;         
             this.morador = morador;
             this.moradordao = moradordao;
             InitializeComponent();
@@ -111,7 +113,7 @@ namespace Sistema_Condominio.View
 
         private void MoradorCadastro_Load(object sender, EventArgs e)
         {
-            if (morador.ID != null) { 
+            if (metodo == "alterar") {
                 preencheFormularioMorador();
             }
         }
