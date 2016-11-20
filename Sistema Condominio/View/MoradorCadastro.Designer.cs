@@ -276,7 +276,7 @@
             this.Controls.Add(this.textNome);
             this.Name = "MoradorCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "030";
+            this.Text = "Cadastro Morador";
             this.Load += new System.EventHandler(this.MoradorCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

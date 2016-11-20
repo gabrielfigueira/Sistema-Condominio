@@ -16,6 +16,7 @@ namespace Sistema_Condominio.View
 {
     public partial class MoradorPesquisar : MetroForm
     {
+        public morador morador;
         public MoradorPesquisar()
         {
             InitializeComponent();
@@ -41,6 +42,17 @@ namespace Sistema_Condominio.View
             BancoDeDados banco = new BancoDeDados();
             var lista = banco.morador.Include(m => m.pessoa).ToList();
             dataGridMorador.DataSource = lista;
+        }
+
+        private void metroTextButtonSelecionar_Click(object sender, EventArgs e)
+        {
+            retornarMorador();
+            this.Close();
+        }
+
+        public morador retornarMorador() {
+            var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+            return morador;
         }
     }
 }

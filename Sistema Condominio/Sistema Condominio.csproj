@@ -98,6 +98,7 @@
   <ItemGroup>
     <Compile Include="Dao\MoradorDAO.cs" />
     <Compile Include="Dao\UnidadeDAO.cs" />
+    <Compile Include="Dao\VeiculoDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

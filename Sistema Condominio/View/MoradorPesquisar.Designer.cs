@@ -31,6 +31,7 @@
             this.dataGridMorador = new System.Windows.Forms.DataGridView();
             this.textFieldPesquisarMorador = new MetroFramework.Controls.MetroTextBox();
             this.btPesquisar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroTextButtonSelecionar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMorador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +86,24 @@
             this.btPesquisar.UseVisualStyleBackColor = true;
             this.btPesquisar.Click += new System.EventHandler(this.btPesquisar_Click);
             // 
+            // metroTextButtonSelecionar
+            // 
+            this.metroTextButtonSelecionar.Image = null;
+            this.metroTextButtonSelecionar.Location = new System.Drawing.Point(23, 311);
+            this.metroTextButtonSelecionar.Name = "metroTextButtonSelecionar";
+            this.metroTextButtonSelecionar.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButtonSelecionar.TabIndex = 10;
+            this.metroTextButtonSelecionar.Text = "Selecionar";
+            this.metroTextButtonSelecionar.UseSelectable = true;
+            this.metroTextButtonSelecionar.UseVisualStyleBackColor = true;
+            this.metroTextButtonSelecionar.Click += new System.EventHandler(this.metroTextButtonSelecionar_Click);
+            // 
             // MoradorPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 320);
+            this.ClientSize = new System.Drawing.Size(719, 357);
+            this.Controls.Add(this.metroTextButtonSelecionar);
             this.Controls.Add(this.dataGridMorador);
             this.Controls.Add(this.textFieldPesquisarMorador);
             this.Controls.Add(this.btPesquisar);
@@ -106,5 +120,6 @@
         private System.Windows.Forms.DataGridView dataGridMorador;
         private MetroFramework.Controls.MetroTextBox textFieldPesquisarMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton btPesquisar;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonSelecionar;
     }
 }

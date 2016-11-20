@@ -197,7 +197,7 @@ namespace Sistema_Condominio.View
         private void metroTextButton5_Click(object sender, EventArgs e)
         {
             VeiculoCadastro veiculocadastro = new VeiculoCadastro();
-            veiculocadastro.Show();
+            veiculocadastro.ShowDialog();
         }
     }
 }
