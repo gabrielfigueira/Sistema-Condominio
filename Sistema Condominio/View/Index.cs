@@ -231,6 +231,7 @@ namespace Sistema_Condominio.View
             VeiculoDAO veiculodao = new VeiculoDAO();
             var veiculo = (veiculo)dataGridVeiculo.CurrentRow.DataBoundItem;
             var alterar = veiculodao.visualizarVeiculo(veiculo);
+            // TESTE
 
             VeiculoCadastro formVeiculo = new VeiculoCadastro(alterar, veiculodao, "alterar"); //chama formulario            
             formVeiculo.ShowDialog();// Show dialog chama de forma assincrona
