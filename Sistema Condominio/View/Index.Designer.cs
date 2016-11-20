@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.metroTextButtonAlterarMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.metroTextButtonExcluirMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.dataGridMorador = new System.Windows.Forms.DataGridView();
             this.metroTextButtonCadastrar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
@@ -55,10 +56,16 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.metroTextButton3 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroTextButton4 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.metroTextButton5 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTextButton6 = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
-            this.metroTextButtonAlterarMorador = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMorador)).BeginInit();
@@ -66,6 +73,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbUnidade.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -78,7 +87,7 @@
             this.tabControl1.Location = new System.Drawing.Point(16, 101);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(686, 557);
+            this.tabControl1.Size = new System.Drawing.Size(671, 340);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -93,11 +102,23 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(678, 531);
+            this.tabPage1.Size = new System.Drawing.Size(663, 314);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Moradores";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // metroTextButtonAlterarMorador
+            // 
+            this.metroTextButtonAlterarMorador.Image = null;
+            this.metroTextButtonAlterarMorador.Location = new System.Drawing.Point(211, 258);
+            this.metroTextButtonAlterarMorador.Name = "metroTextButtonAlterarMorador";
+            this.metroTextButtonAlterarMorador.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButtonAlterarMorador.TabIndex = 8;
+            this.metroTextButtonAlterarMorador.Text = "Alterar";
+            this.metroTextButtonAlterarMorador.UseSelectable = true;
+            this.metroTextButtonAlterarMorador.UseVisualStyleBackColor = true;
+            this.metroTextButtonAlterarMorador.Click += new System.EventHandler(this.metroTextButtonAlterarMorador_Click_1);
             // 
             // metroTextButtonExcluirMorador
             // 
@@ -163,6 +184,7 @@
             this.textFieldPesquisarMorador.WaterMark = "Pesquise aqui...";
             this.textFieldPesquisarMorador.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textFieldPesquisarMorador.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.textFieldPesquisarMorador.Click += new System.EventHandler(this.textFieldPesquisarMorador_Click);
             // 
             // btPesquisar
             // 
@@ -193,7 +215,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(678, 531);
+            this.tabPage2.Size = new System.Drawing.Size(663, 314);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Unidades";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -399,20 +421,119 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.metroTextButton3);
+            this.tabPage3.Controls.Add(this.metroTextButton4);
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.metroTextButton5);
+            this.tabPage3.Controls.Add(this.metroTextBox1);
+            this.tabPage3.Controls.Add(this.metroTextButton6);
+            this.tabPage3.Controls.Add(this.listView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(678, 531);
+            this.tabPage3.Size = new System.Drawing.Size(663, 314);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Veículos";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // metroTextButton3
+            // 
+            this.metroTextButton3.Image = null;
+            this.metroTextButton3.Location = new System.Drawing.Point(211, 258);
+            this.metroTextButton3.Name = "metroTextButton3";
+            this.metroTextButton3.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButton3.TabIndex = 15;
+            this.metroTextButton3.Text = "Alterar";
+            this.metroTextButton3.UseSelectable = true;
+            this.metroTextButton3.UseVisualStyleBackColor = true;
+            // 
+            // metroTextButton4
+            // 
+            this.metroTextButton4.Image = null;
+            this.metroTextButton4.Location = new System.Drawing.Point(110, 258);
+            this.metroTextButton4.Name = "metroTextButton4";
+            this.metroTextButton4.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButton4.TabIndex = 14;
+            this.metroTextButton4.Text = "Excluir";
+            this.metroTextButton4.UseSelectable = true;
+            this.metroTextButton4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 40);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(636, 212);
+            this.dataGridView2.TabIndex = 13;
+            // 
+            // metroTextButton5
+            // 
+            this.metroTextButton5.Image = null;
+            this.metroTextButton5.Location = new System.Drawing.Point(6, 258);
+            this.metroTextButton5.Name = "metroTextButton5";
+            this.metroTextButton5.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButton5.TabIndex = 12;
+            this.metroTextButton5.Text = "Cadastrar";
+            this.metroTextButton5.UseSelectable = true;
+            this.metroTextButton5.UseVisualStyleBackColor = true;
+            this.metroTextButton5.Click += new System.EventHandler(this.metroTextButton5_Click);
+            // 
+            // metroTextBox1
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox1.CustomButton.Image = null;
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(301, 1);
+            this.metroTextBox1.CustomButton.Name = "";
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox1.CustomButton.TabIndex = 1;
+            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox1.CustomButton.UseSelectable = true;
+            this.metroTextBox1.CustomButton.Visible = false;
+            this.metroTextBox1.Lines = new string[0];
+            this.metroTextBox1.Location = new System.Drawing.Point(6, 11);
+            this.metroTextBox1.MaxLength = 32767;
+            this.metroTextBox1.Name = "metroTextBox1";
+            this.metroTextBox1.PasswordChar = '\0';
+            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox1.SelectedText = "";
+            this.metroTextBox1.SelectionLength = 0;
+            this.metroTextBox1.SelectionStart = 0;
+            this.metroTextBox1.Size = new System.Drawing.Size(323, 23);
+            this.metroTextBox1.TabIndex = 11;
+            this.metroTextBox1.UseSelectable = true;
+            this.metroTextBox1.WaterMark = "Pesquise aqui...";
+            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroTextButton6
+            // 
+            this.metroTextButton6.Image = null;
+            this.metroTextButton6.Location = new System.Drawing.Point(335, 11);
+            this.metroTextButton6.Name = "metroTextButton6";
+            this.metroTextButton6.Size = new System.Drawing.Size(75, 23);
+            this.metroTextButton6.TabIndex = 10;
+            this.metroTextButton6.Text = "Pesquisar";
+            this.metroTextButton6.UseSelectable = true;
+            this.metroTextButton6.UseVisualStyleBackColor = true;
+            // 
+            // listView2
+            // 
+            this.listView2.Location = new System.Drawing.Point(6, 40);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(636, 212);
+            this.listView2.TabIndex = 9;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // tabPage4
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(678, 531);
+            this.tabPage4.Size = new System.Drawing.Size(663, 314);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Administração";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -442,23 +563,11 @@
             this.htmlLabel1.Text = "Sistema Condominio";
             this.htmlLabel1.Click += new System.EventHandler(this.htmlLabel1_Click);
             // 
-            // metroTextButtonAlterarMorador
-            // 
-            this.metroTextButtonAlterarMorador.Image = null;
-            this.metroTextButtonAlterarMorador.Location = new System.Drawing.Point(211, 258);
-            this.metroTextButtonAlterarMorador.Name = "metroTextButtonAlterarMorador";
-            this.metroTextButtonAlterarMorador.Size = new System.Drawing.Size(75, 23);
-            this.metroTextButtonAlterarMorador.TabIndex = 8;
-            this.metroTextButtonAlterarMorador.Text = "Alterar";
-            this.metroTextButtonAlterarMorador.UseSelectable = true;
-            this.metroTextButtonAlterarMorador.UseVisualStyleBackColor = true;
-            this.metroTextButtonAlterarMorador.Click += new System.EventHandler(this.metroTextButtonAlterarMorador_Click_1);
-            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 712);
+            this.ClientSize = new System.Drawing.Size(844, 680);
             this.Controls.Add(this.htmlLabel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Index";
@@ -472,6 +581,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbUnidade.ResumeLayout(false);
             this.gbUnidade.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -509,5 +620,12 @@
         private System.Windows.Forms.DataGridView dataGridMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonExcluirMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonAlterarMorador;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton3;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton4;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton5;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton6;
+        private System.Windows.Forms.ListView listView2;
     }
 }

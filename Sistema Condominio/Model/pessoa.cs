@@ -45,7 +45,7 @@ namespace Sistema_Condominio.Model
         public string TEL_COMERC { get; set; }
 
         [Required]
-        [StringLength(45)]
+        [StringLength(255)]
         public string EMAIL { get; set; }
 
         public bool NECES_ESPECIAL { get; set; }

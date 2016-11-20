@@ -10,7 +10,6 @@ namespace Sistema_Condominio.Dao
 {
     public class MoradorDAO
     {
-        private String _pesquisa;
         private BancoDeDados banco;
 
         public MoradorDAO() {

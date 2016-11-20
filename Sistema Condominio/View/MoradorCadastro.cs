@@ -74,18 +74,19 @@ namespace Sistema_Condominio.View
             morador.pessoa.EMAIL                = textEmail.Text;
         }
 
-        private void preencheFormularioMorador()
-        {            
-            comboBoxTipoMorador.Text            = morador.TIPO_MORADOR;
-            dateTimeDataInicio.Value            = morador.DATA_INI;
-            dateTimeDataFim.Value               = morador.DATA_FIM == null ? DateTime.MinValue : (DateTime)morador.DATA_FIM;
-            textNome.Text                       = morador.pessoa.NOME;
-            textCPF.Text                        = morador.pessoa.CPF;
-            textRG.Text                         = morador.pessoa.RG;
-            textTResidencial.Text               = morador.pessoa.TELEFONE_RESIDENCIAL;
-            textTComercial.Text                 = morador.pessoa.TEL_COMERC;
-            textTCelular.Text                   = morador.pessoa.CELULAR;
-            textEmail.Text                      = morador.pessoa.EMAIL;
+        private void preencheFormularioMorador() {           
+            
+                comboBoxTipoMorador.Text = morador.TIPO_MORADOR;
+                dateTimeDataInicio.Value = morador.DATA_INI == null ? DateTime.MinValue : (DateTime)morador.DATA_INI;
+                dateTimeDataFim.Value = morador.DATA_FIM == null ? DateTime.MinValue : (DateTime)morador.DATA_FIM;
+                textNome.Text = morador.pessoa.NOME;
+                textCPF.Text = morador.pessoa.CPF;
+                textRG.Text = morador.pessoa.RG;
+                textTResidencial.Text = morador.pessoa.TELEFONE_RESIDENCIAL;
+                textTComercial.Text = morador.pessoa.TEL_COMERC;
+                textTCelular.Text = morador.pessoa.CELULAR;
+                textEmail.Text = morador.pessoa.EMAIL;
+            
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -111,15 +112,14 @@ namespace Sistema_Condominio.View
         private void MoradorCadastro_Load(object sender, EventArgs e)
         {
             if (morador.ID != null) { 
-            preencheFormularioMorador();
-        }
+                preencheFormularioMorador();
+            }
         }
 
         private void buttonAlterarMorador_Click(object sender, EventArgs e)
         {         
             try
-            {
-                //morador = new morador();                
+            {                             
                 carregaMorador();                
                 moradordao.alterarMorador(morador);
 

@@ -22,11 +22,7 @@ namespace Sistema_Condominio
         private void button1_Click(object sender, EventArgs e)
         {
 
-            BancoDeDados banco = new BancoDeDados();
-
-            MoradorLista moradorLista = new MoradorLista();
-            moradorLista.Show();
-
+  
 
         }
     }

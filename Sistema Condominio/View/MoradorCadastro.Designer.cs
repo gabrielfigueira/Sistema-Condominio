@@ -50,6 +50,7 @@
             this.comboBoxTipoMorador = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonAlterarMorador = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // textNome
@@ -275,7 +276,7 @@
             this.Controls.Add(this.textNome);
             this.Name = "MoradorCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MoradorCadastro";
+            this.Text = "030";
             this.Load += new System.EventHandler(this.MoradorCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -306,5 +307,6 @@
         private System.Windows.Forms.ComboBox comboBoxTipoMorador;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonAlterarMorador;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

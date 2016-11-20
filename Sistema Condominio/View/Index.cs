@@ -18,7 +18,6 @@ namespace Sistema_Condominio.View
     public partial class Index : MetroForm
     {
         private unidade unidade;
-        private Form _formulario;
         private MoradorDAO moradordao;
 
 
@@ -134,7 +133,7 @@ namespace Sistema_Condominio.View
 
         private void metroTextButton3_Click(object sender, EventArgs e)
         {
-            MoradorCadastro formMorador = new MoradorCadastro(new morador(),moradordao);
+            MoradorCadastro formMorador = new MoradorCadastro(new morador(), moradordao);
             formMorador.ShowDialog();
             carregaDadosMorador();
         }
@@ -188,6 +187,17 @@ namespace Sistema_Condominio.View
             MoradorCadastro formMorador = new MoradorCadastro(alterar, moradordao); //chama formulario            
             formMorador.ShowDialog();// Show dialog chama de forma assincrona
             carregaDadosMorador();
+        }
+
+        private void textFieldPesquisarMorador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextButton5_Click(object sender, EventArgs e)
+        {
+            VeiculoCadastro veiculocadastro = new VeiculoCadastro();
+            veiculocadastro.Show();
         }
     }
 }

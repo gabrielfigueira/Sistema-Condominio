@@ -25,13 +25,11 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe.config
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Properties.Resources.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Index.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Login.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorLista.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Unidade.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe
@@ -43,3 +41,6 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\MySql.Web.dll
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.xml
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.VeiculoCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorPesquisar.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
