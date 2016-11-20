@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Condominio.View
 {
-    partial class Unidade
+    partial class UnidadeCadastro
     {
         /// <summary>
         /// Required designer variable.

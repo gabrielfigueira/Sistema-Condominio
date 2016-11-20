@@ -150,11 +150,11 @@
     <Compile Include="View\MoradorPesquisar.Designer.cs">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Unidade.cs">
+    <Compile Include="View\UnidadeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Unidade.Designer.cs">
-      <DependentUpon>Unidade.cs</DependentUpon>
+    <Compile Include="View\UnidadeCadastro.Designer.cs">
+      <DependentUpon>UnidadeCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\VeiculoCadastro.cs">
       <SubType>Form</SubType>
@@ -187,8 +187,8 @@
     <EmbeddedResource Include="View\MoradorPesquisar.resx">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Unidade.resx">
-      <DependentUpon>Unidade.cs</DependentUpon>
+    <EmbeddedResource Include="View\UnidadeCadastro.resx">
+      <DependentUpon>UnidadeCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\VeiculoCadastro.resx">
       <DependentUpon>VeiculoCadastro.cs</DependentUpon>

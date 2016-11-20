@@ -11,9 +11,9 @@ using MetroFramework.Forms;
 
 namespace Sistema_Condominio.View
 {
-    public partial class Unidade : MetroForm
+    public partial class UnidadeCadastro : MetroForm
     {
-        public Unidade()
+        public UnidadeCadastro()
         {
             InitializeComponent();
         }
