@@ -11,18 +11,18 @@ namespace Sistema_Condominio.Dao
     public class VeiculoDAO
     {
         private BancoDeDados banco;
-
+        public VeiculoDAO() {
+            banco = new BancoDeDados();
+        }
+        
         public void cadastrarVeiculo(veiculo veiculo)
         {
-            BancoDeDados banco = new BancoDeDados();
             banco.veiculo.Add(veiculo);
             banco.SaveChanges();
-
         }
 
         public void excluirVeiculo(veiculo veiculo)
         {
-            veiculo = new Model.veiculo();
             var ve = banco.veiculo.Find(veiculo.ID);
             banco.veiculo.Remove(ve);
             banco.SaveChanges();
@@ -43,7 +43,8 @@ namespace Sistema_Condominio.Dao
 
         public void alterarVeiculo(veiculo veiculo)
         {
-            banco.Entry(veiculo).State = EntityState.Modified;
+            var veicu = banco.veiculo.Find(veiculo.ID);
+            banco.Entry(veicu).State = System.Data.Entity.EntityState.Modified;
             banco.SaveChanges();
         }
     }

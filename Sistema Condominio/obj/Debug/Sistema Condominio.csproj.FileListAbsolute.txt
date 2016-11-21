@@ -30,7 +30,6 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Index.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Login.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
-C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Unidade.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.pdb
@@ -44,3 +43,5 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.VeiculoCadastro.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorPesquisar.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UnidadeCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.RelacaoMoradorLista.resources

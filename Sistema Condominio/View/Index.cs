@@ -63,14 +63,12 @@ namespace Sistema_Condominio.View
 
         private void carregaUnidade()
         {
-
             unidade.ATIVO = checkBoxUnidade.Checked;
             unidade.grupo_unidade.DESCRICAO = cbTipoImovel.Text;
             unidade.grupo_unidade.QNT_APARTAMENTO = int.Parse(tbQtdApartamento.Text);
             unidade.tipo_unidade.QNTD_COMODO = int.Parse(tbQtdComodo.Text);
             unidade.tipo_unidade.DESCRICAO = tbDescricao.Text;
             unidade.tipo_unidade.ANDAR = tbAndar.Text;
-
            
         }
         
@@ -230,12 +228,16 @@ namespace Sistema_Condominio.View
             BancoDeDados banco = new BancoDeDados();
             VeiculoDAO veiculodao = new VeiculoDAO();
             var veiculo = (veiculo)dataGridVeiculo.CurrentRow.DataBoundItem;
-            var alterar = veiculodao.visualizarVeiculo(veiculo);
-            // TESTE
+            var alterar = veiculodao.visualizarVeiculo(veiculo);           
 
             VeiculoCadastro formVeiculo = new VeiculoCadastro(alterar, veiculodao, "alterar"); //chama formulario            
             formVeiculo.ShowDialog();// Show dialog chama de forma assincrona
             carregaDadosVeiculos();
+        }
+
+        private void textButtonParentes_Click(object sender, EventArgs e)
+        {
+           var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
         }
     }
 }

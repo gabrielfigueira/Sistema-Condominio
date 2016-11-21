@@ -42,6 +42,7 @@
             this.metroTextBoxMoradorNome = new MetroFramework.Controls.MetroTextBox();
             this.btPesquisar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.textButtonCadastrar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.textButtonAlterar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.SuspendLayout();
             // 
             // textBoxMarca
@@ -298,11 +299,24 @@
             this.textButtonCadastrar.UseVisualStyleBackColor = true;
             this.textButtonCadastrar.Click += new System.EventHandler(this.textButtonCadastrar_Click);
             // 
+            // textButtonAlterar
+            // 
+            this.textButtonAlterar.Image = null;
+            this.textButtonAlterar.Location = new System.Drawing.Point(235, 189);
+            this.textButtonAlterar.Name = "textButtonAlterar";
+            this.textButtonAlterar.Size = new System.Drawing.Size(143, 23);
+            this.textButtonAlterar.TabIndex = 14;
+            this.textButtonAlterar.Text = "Alterar";
+            this.textButtonAlterar.UseSelectable = true;
+            this.textButtonAlterar.UseVisualStyleBackColor = true;
+            this.textButtonAlterar.Click += new System.EventHandler(this.textButtonAlterar_Click);
+            // 
             // VeiculoCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 223);
+            this.Controls.Add(this.textButtonAlterar);
             this.Controls.Add(this.textButtonCadastrar);
             this.Controls.Add(this.btPesquisar);
             this.Controls.Add(this.metroTextBoxMoradorNome);
@@ -341,5 +355,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBoxMoradorNome;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton btPesquisar;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton textButtonCadastrar;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton textButtonAlterar;
     }
 }

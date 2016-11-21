@@ -66,6 +66,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.textButtonParentes = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMorador)).BeginInit();
@@ -84,7 +85,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(16, 101);
+            this.tabControl1.Location = new System.Drawing.Point(20, 104);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(671, 340);
@@ -92,6 +93,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textButtonParentes);
             this.tabPage1.Controls.Add(this.metroTextButtonAlterarMorador);
             this.tabPage1.Controls.Add(this.metroTextButtonExcluirMorador);
             this.tabPage1.Controls.Add(this.dataGridMorador);
@@ -568,6 +570,18 @@
             this.htmlLabel1.Text = "Sistema Condominio";
             this.htmlLabel1.Click += new System.EventHandler(this.htmlLabel1_Click);
             // 
+            // textButtonParentes
+            // 
+            this.textButtonParentes.Image = null;
+            this.textButtonParentes.Location = new System.Drawing.Point(310, 258);
+            this.textButtonParentes.Name = "textButtonParentes";
+            this.textButtonParentes.Size = new System.Drawing.Size(114, 23);
+            this.textButtonParentes.TabIndex = 17;
+            this.textButtonParentes.Text = "Parentes Morador";
+            this.textButtonParentes.UseSelectable = true;
+            this.textButtonParentes.UseVisualStyleBackColor = true;
+            this.textButtonParentes.Click += new System.EventHandler(this.textButtonParentes_Click);
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -632,5 +646,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButton6;
         private System.Windows.Forms.ListView listView2;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton textButtonParentes;
     }
 }

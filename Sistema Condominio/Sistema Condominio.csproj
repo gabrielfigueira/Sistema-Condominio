@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\MoradorDAO.cs" />
+    <Compile Include="Dao\RelacaoMoradorDAO.cs" />
     <Compile Include="Dao\UnidadeDAO.cs" />
     <Compile Include="Dao\VeiculoDAO.cs" />
     <Compile Include="Form1.cs">
@@ -150,6 +151,12 @@
     <Compile Include="View\MoradorPesquisar.Designer.cs">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RelacaoMoradorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RelacaoMoradorLista.Designer.cs">
+      <DependentUpon>RelacaoMoradorLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UnidadeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\MoradorPesquisar.resx">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RelacaoMoradorLista.resx">
+      <DependentUpon>RelacaoMoradorLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UnidadeCadastro.resx">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
