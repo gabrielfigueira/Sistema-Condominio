@@ -126,6 +126,18 @@
     <Compile Include="Model\visita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\CorpoADMCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CorpoADMCadastro.Designer.cs">
+      <DependentUpon>CorpoADMCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FuncionarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FuncionarioCadastro.Designer.cs">
+      <DependentUpon>FuncionarioCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +168,12 @@
     <Compile Include="View\UnidadeCadastro.Designer.cs">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UsuarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UsuarioCadastro.Designer.cs">
+      <DependentUpon>UsuarioCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\VeiculoCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +193,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\CorpoADMCadastro.resx">
+      <DependentUpon>CorpoADMCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FuncionarioCadastro.resx">
+      <DependentUpon>FuncionarioCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UnidadeCadastro.resx">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UsuarioCadastro.resx">
+      <DependentUpon>UsuarioCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\VeiculoCadastro.resx">
       <DependentUpon>VeiculoCadastro.cs</DependentUpon>

@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace Sistema_Condominio.Dao
 {
-    class UnidadeDAO
+    public class UnidadeDAO
     {
+        private BancoDeDados banco;
+
+        public UnidadeDAO()
+        {
+            banco = new BancoDeDados();
+        }
+
         public void cadastrarUnidade(unidade unidade)
         {
 

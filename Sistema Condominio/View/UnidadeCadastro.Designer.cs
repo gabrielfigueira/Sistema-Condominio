@@ -28,153 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.tbQtdComodo = new MetroFramework.Controls.MetroTextBox();
-            this.tbAndar = new MetroFramework.Controls.MetroTextBox();
-            this.tbDescricao = new MetroFramework.Controls.MetroTextBox();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.checkBoxUnidade = new System.Windows.Forms.CheckBox();
+            this.tbQtdComodo = new System.Windows.Forms.TextBox();
+            this.tbAndar = new System.Windows.Forms.TextBox();
+            this.tbQtdApartamento = new System.Windows.Forms.TextBox();
+            this.btCadastrarUnidade = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.cbTipoImovel = new System.Windows.Forms.ComboBox();
-            this.tbQtdApart = new System.Windows.Forms.TextBox();
-            this.btCadastrar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.tbDescricao = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(12, 120);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(100, 19);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "Tipo de Imóvel:";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(12, 164);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(121, 19);
-            this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "Qtd. Apartamento:";
-            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(12, 200);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(99, 19);
-            this.metroLabel3.TabIndex = 2;
-            this.metroLabel3.Text = "Qtd. Comodo: ";
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(12, 237);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(53, 19);
-            this.metroLabel4.TabIndex = 3;
-            this.metroLabel4.Text = "Andar: ";
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(12, 272);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(72, 19);
-            this.metroLabel5.TabIndex = 4;
-            this.metroLabel5.Text = "Descrição: ";
-            // 
-            // tbQtdComodo
-            // 
-            // 
-            // 
-            // 
-            this.tbQtdComodo.CustomButton.Image = null;
-            this.tbQtdComodo.CustomButton.Location = new System.Drawing.Point(43, 1);
-            this.tbQtdComodo.CustomButton.Name = "";
-            this.tbQtdComodo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbQtdComodo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbQtdComodo.CustomButton.TabIndex = 1;
-            this.tbQtdComodo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbQtdComodo.CustomButton.UseSelectable = true;
-            this.tbQtdComodo.CustomButton.Visible = false;
-            this.tbQtdComodo.Lines = new string[0];
-            this.tbQtdComodo.Location = new System.Drawing.Point(153, 196);
-            this.tbQtdComodo.MaxLength = 32767;
-            this.tbQtdComodo.Name = "tbQtdComodo";
-            this.tbQtdComodo.PasswordChar = '\0';
-            this.tbQtdComodo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbQtdComodo.SelectedText = "";
-            this.tbQtdComodo.SelectionLength = 0;
-            this.tbQtdComodo.SelectionStart = 0;
-            this.tbQtdComodo.Size = new System.Drawing.Size(65, 23);
-            this.tbQtdComodo.TabIndex = 7;
-            this.tbQtdComodo.UseSelectable = true;
-            this.tbQtdComodo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbQtdComodo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbAndar
-            // 
-            // 
-            // 
-            // 
-            this.tbAndar.CustomButton.Image = null;
-            this.tbAndar.CustomButton.Location = new System.Drawing.Point(43, 1);
-            this.tbAndar.CustomButton.Name = "";
-            this.tbAndar.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tbAndar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbAndar.CustomButton.TabIndex = 1;
-            this.tbAndar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbAndar.CustomButton.UseSelectable = true;
-            this.tbAndar.CustomButton.Visible = false;
-            this.tbAndar.Lines = new string[0];
-            this.tbAndar.Location = new System.Drawing.Point(153, 233);
-            this.tbAndar.MaxLength = 32767;
-            this.tbAndar.Name = "tbAndar";
-            this.tbAndar.PasswordChar = '\0';
-            this.tbAndar.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbAndar.SelectedText = "";
-            this.tbAndar.SelectionLength = 0;
-            this.tbAndar.SelectionStart = 0;
-            this.tbAndar.Size = new System.Drawing.Size(65, 23);
-            this.tbAndar.TabIndex = 8;
-            this.tbAndar.UseSelectable = true;
-            this.tbAndar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbAndar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tbDescricao
-            // 
-            // 
-            // 
-            // 
-            this.tbDescricao.CustomButton.Image = null;
-            this.tbDescricao.CustomButton.Location = new System.Drawing.Point(124, 2);
-            this.tbDescricao.CustomButton.Name = "";
-            this.tbDescricao.CustomButton.Size = new System.Drawing.Size(97, 97);
-            this.tbDescricao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tbDescricao.CustomButton.TabIndex = 1;
-            this.tbDescricao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tbDescricao.CustomButton.UseSelectable = true;
-            this.tbDescricao.CustomButton.Visible = false;
-            this.tbDescricao.Lines = new string[0];
-            this.tbDescricao.Location = new System.Drawing.Point(153, 272);
-            this.tbDescricao.MaxLength = 32767;
-            this.tbDescricao.Multiline = true;
-            this.tbDescricao.Name = "tbDescricao";
-            this.tbDescricao.PasswordChar = '\0';
-            this.tbDescricao.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbDescricao.SelectedText = "";
-            this.tbDescricao.SelectionLength = 0;
-            this.tbDescricao.SelectionStart = 0;
-            this.tbDescricao.Size = new System.Drawing.Size(224, 102);
-            this.tbDescricao.TabIndex = 9;
-            this.tbDescricao.UseSelectable = true;
-            this.tbDescricao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tbDescricao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // htmlLabel1
             // 
@@ -190,58 +57,161 @@
             this.htmlLabel1.TabIndex = 10;
             this.htmlLabel1.Text = "Cadastro de Unidade";
             // 
+            // checkBoxUnidade
+            // 
+            this.checkBoxUnidade.AutoSize = true;
+            this.checkBoxUnidade.Location = new System.Drawing.Point(500, 126);
+            this.checkBoxUnidade.Name = "checkBoxUnidade";
+            this.checkBoxUnidade.Size = new System.Drawing.Size(77, 17);
+            this.checkBoxUnidade.TabIndex = 38;
+            this.checkBoxUnidade.Text = "Disponível";
+            this.checkBoxUnidade.UseVisualStyleBackColor = true;
+            // 
+            // tbQtdComodo
+            // 
+            this.tbQtdComodo.Location = new System.Drawing.Point(500, 76);
+            this.tbQtdComodo.Name = "tbQtdComodo";
+            this.tbQtdComodo.Size = new System.Drawing.Size(77, 20);
+            this.tbQtdComodo.TabIndex = 37;
+            this.tbQtdComodo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbQtdComodo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // tbAndar
+            // 
+            this.tbAndar.Location = new System.Drawing.Point(324, 123);
+            this.tbAndar.Name = "tbAndar";
+            this.tbAndar.Size = new System.Drawing.Size(132, 20);
+            this.tbAndar.TabIndex = 36;
+            // 
+            // tbQtdApartamento
+            // 
+            this.tbQtdApartamento.Location = new System.Drawing.Point(154, 119);
+            this.tbQtdApartamento.Name = "tbQtdApartamento";
+            this.tbQtdApartamento.Size = new System.Drawing.Size(77, 20);
+            this.tbQtdApartamento.TabIndex = 27;
+            // 
+            // btCadastrarUnidade
+            // 
+            this.btCadastrarUnidade.Image = null;
+            this.btCadastrarUnidade.Location = new System.Drawing.Point(463, 221);
+            this.btCadastrarUnidade.Name = "btCadastrarUnidade";
+            this.btCadastrarUnidade.Size = new System.Drawing.Size(114, 23);
+            this.btCadastrarUnidade.TabIndex = 28;
+            this.btCadastrarUnidade.Text = "Salvar";
+            this.btCadastrarUnidade.UseSelectable = true;
+            this.btCadastrarUnidade.UseVisualStyleBackColor = true;
+            this.btCadastrarUnidade.Click += new System.EventHandler(this.btCadastrarUnidade_Click);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(13, 80);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(100, 19);
+            this.metroLabel6.TabIndex = 29;
+            this.metroLabel6.Text = "Tipo de Imóvel:";
+            // 
             // cbTipoImovel
             // 
+            this.cbTipoImovel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipoImovel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoImovel.FormattingEnabled = true;
             this.cbTipoImovel.Items.AddRange(new object[] {
             "Prédio",
             "Casa",
             "Mansão"});
-            this.cbTipoImovel.Location = new System.Drawing.Point(153, 118);
+            this.cbTipoImovel.Location = new System.Drawing.Point(154, 78);
             this.cbTipoImovel.Name = "cbTipoImovel";
-            this.cbTipoImovel.Size = new System.Drawing.Size(224, 21);
-            this.cbTipoImovel.TabIndex = 13;
-            this.cbTipoImovel.Text = "Selecione o tipo de imóvel";
-            this.cbTipoImovel.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbTipoImovel.Size = new System.Drawing.Size(224, 23);
+            this.cbTipoImovel.TabIndex = 35;
+            this.cbTipoImovel.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
-            // tbQtdApart
+            // metroLabel7
             // 
-            this.tbQtdApart.Location = new System.Drawing.Point(153, 164);
-            this.tbQtdApart.Name = "tbQtdApart";
-            this.tbQtdApart.Size = new System.Drawing.Size(65, 20);
-            this.tbQtdApart.TabIndex = 14;
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(13, 120);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(121, 19);
+            this.metroLabel7.TabIndex = 30;
+            this.metroLabel7.Text = "Qtd. Apartamento:";
             // 
-            // btCadastrar
+            // tbDescricao
             // 
-            this.btCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadastrar.Image = null;
-            this.btCadastrar.Location = new System.Drawing.Point(274, 380);
-            this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(103, 30);
-            this.btCadastrar.TabIndex = 15;
-            this.btCadastrar.Text = "Cadastrar";
-            this.btCadastrar.UseSelectable = true;
-            this.btCadastrar.UseVisualStyleBackColor = true;
-            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
-            // Unidade
+            // 
+            // 
+            this.tbDescricao.CustomButton.Image = null;
+            this.tbDescricao.CustomButton.Location = new System.Drawing.Point(373, 1);
+            this.tbDescricao.CustomButton.Name = "";
+            this.tbDescricao.CustomButton.Size = new System.Drawing.Size(49, 49);
+            this.tbDescricao.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbDescricao.CustomButton.TabIndex = 1;
+            this.tbDescricao.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbDescricao.CustomButton.UseSelectable = true;
+            this.tbDescricao.CustomButton.Visible = false;
+            this.tbDescricao.Lines = new string[0];
+            this.tbDescricao.Location = new System.Drawing.Point(154, 154);
+            this.tbDescricao.MaxLength = 32767;
+            this.tbDescricao.Multiline = true;
+            this.tbDescricao.Name = "tbDescricao";
+            this.tbDescricao.PasswordChar = '\0';
+            this.tbDescricao.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbDescricao.SelectedText = "";
+            this.tbDescricao.SelectionLength = 0;
+            this.tbDescricao.SelectionStart = 0;
+            this.tbDescricao.Size = new System.Drawing.Size(423, 51);
+            this.tbDescricao.TabIndex = 34;
+            this.tbDescricao.UseSelectable = true;
+            this.tbDescricao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbDescricao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(395, 80);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(99, 19);
+            this.metroLabel8.TabIndex = 31;
+            this.metroLabel8.Text = "Qtd. Comodo: ";
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(242, 120);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(76, 19);
+            this.metroLabel9.TabIndex = 32;
+            this.metroLabel9.Text = "Qtd Andar:";
+            this.metroLabel9.Click += new System.EventHandler(this.metroLabel9_Click);
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(13, 154);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel10.TabIndex = 33;
+            this.metroLabel10.Text = "Descrição: ";
+            // 
+            // UnidadeCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 514);
-            this.Controls.Add(this.btCadastrar);
-            this.Controls.Add(this.tbQtdApart);
-            this.Controls.Add(this.cbTipoImovel);
-            this.Controls.Add(this.htmlLabel1);
-            this.Controls.Add(this.tbDescricao);
-            this.Controls.Add(this.tbAndar);
+            this.ClientSize = new System.Drawing.Size(611, 267);
+            this.Controls.Add(this.checkBoxUnidade);
             this.Controls.Add(this.tbQtdComodo);
-            this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroLabel1);
-            this.Name = "Unidade";
+            this.Controls.Add(this.tbAndar);
+            this.Controls.Add(this.tbQtdApartamento);
+            this.Controls.Add(this.btCadastrarUnidade);
+            this.Controls.Add(this.metroLabel6);
+            this.Controls.Add(this.cbTipoImovel);
+            this.Controls.Add(this.metroLabel7);
+            this.Controls.Add(this.tbDescricao);
+            this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.metroLabel9);
+            this.Controls.Add(this.metroLabel10);
+            this.Controls.Add(this.htmlLabel1);
+            this.Name = "UnidadeCadastro";
             this.Text = "Unidade";
             this.Load += new System.EventHandler(this.Unidade_Load);
             this.ResumeLayout(false);
@@ -250,18 +220,18 @@
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroTextBox tbQtdComodo;
-        private MetroFramework.Controls.MetroTextBox tbAndar;
-        private MetroFramework.Controls.MetroTextBox tbDescricao;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
+        private System.Windows.Forms.CheckBox checkBoxUnidade;
+        private System.Windows.Forms.TextBox tbQtdComodo;
+        private System.Windows.Forms.TextBox tbAndar;
+        private System.Windows.Forms.TextBox tbQtdApartamento;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton btCadastrarUnidade;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
         private System.Windows.Forms.ComboBox cbTipoImovel;
-        private System.Windows.Forms.TextBox tbQtdApart;
-        private MetroFramework.Controls.MetroTextBox.MetroTextButton btCadastrar;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroTextBox tbDescricao;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
     }
 }
