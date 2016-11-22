@@ -9,14 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace Sistema_Condominio.View
 {
-    public partial class MoradorCadastro : Form
+    public partial class MoradorCadastro : MetroForm
     {
         private morador morador;
         private MoradorDAO moradordao;
         public string metodo;
+
         public MoradorCadastro()
         {
             InitializeComponent();

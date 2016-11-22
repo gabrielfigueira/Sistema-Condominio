@@ -19,6 +19,7 @@ namespace Sistema_Condominio.View
     {
         private unidade unidade;
         private MoradorDAO moradordao;
+        private UnidadeDAO unidadeDao;
 
 
         public Index()
@@ -41,52 +42,7 @@ namespace Sistema_Condominio.View
 
         }
 
-        private void btCadastrarUnidade_Click(object sender, EventArgs e){
-
-            //BancoDeDados banco = new BancoDeDados();
-            try
-            {
-                unidade = new unidade();
-                carregaUnidade();
-                UnidadeDAO unidadeDao = new UnidadeDAO();
-                unidadeDao.cadastrarUnidade(unidade);
-
-                MessageBox.Show("Cadastrado com sucesso!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
-
-
-        private void carregaUnidade()
-        {
-            unidade.ATIVO = checkBoxUnidade.Checked;
-            unidade.grupo_unidade.DESCRICAO = cbTipoImovel.Text;
-            unidade.grupo_unidade.QNT_APARTAMENTO = int.Parse(tbQtdApartamento.Text);
-            unidade.tipo_unidade.QNTD_COMODO = int.Parse(tbQtdComodo.Text);
-            unidade.tipo_unidade.DESCRICAO = tbDescricao.Text;
-            unidade.tipo_unidade.ANDAR = tbAndar.Text;
-           
-        }
         
-
-        private void cbTipoImovel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (!cbTipoImovel.SelectedItem.ToString().Trim().Equals("Prédio"))
-            {
-                tbQtdApartamento.Enabled = false;
-                tbAndar.Enabled = false;
-            }
-            if (cbTipoImovel.SelectedItem.ToString().Trim().Equals("Prédio"))
-            {
-                tbQtdApartamento.Enabled = true;
-                tbAndar.Enabled = true;
-            }
-        }
-
         private void tbQtdComodo_Click(object sender, EventArgs e)
         {
 
@@ -96,22 +52,13 @@ namespace Sistema_Condominio.View
         {
 
         }
-
-        private void tbQtdComodo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            char ch = e.KeyChar;
-
-            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-                MessageBox.Show("Insira apenas números!");
-            }
-        }
+              
 
         private void Index_Load(object sender, EventArgs e)
         {
             carregaDadosMorador(); //Carregando dados do morador 
             carregaDadosVeiculos(); // Carregar Dados Veiculo
+            carregaDadosUnidade();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -194,9 +141,15 @@ namespace Sistema_Condominio.View
             dataGridMorador.DataSource = lista;
         }
 
+        private void carregaDadosUnidade()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.unidade.Include(u => u.tipoUnidade).Include(u => u.grupoUnidade).ToList();
+            dataGridUnidade.DataSource = lista;
+        }
+
         private void carregaDadosVeiculos()
         {
-            // Carregando dados do morado r listando no datagrid view
             BancoDeDados banco = new BancoDeDados();
             var lista = banco.veiculo.ToList();
             dataGridVeiculo.DataSource = lista;
@@ -235,9 +188,21 @@ namespace Sistema_Condominio.View
             carregaDadosVeiculos();
         }
 
-        private void textButtonParentes_Click(object sender, EventArgs e)
+        private void tbQtdComodo_TextChanged(object sender, EventArgs e)
         {
-           var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCadastrarUnidade_Click(object sender, EventArgs e)
+        {
+            UnidadeCadastro formUnidade = new UnidadeCadastro(new unidade(), unidadeDao, "cadastrar");
+            formUnidade.ShowDialog();
+            carregaDadosUnidade();
         }
     }
 }

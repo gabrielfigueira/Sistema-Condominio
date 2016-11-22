@@ -11,7 +11,6 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\EntityFr
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Form1.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.Properties.Resources.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorCadastro.resources
-C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorLista.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.exe
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.pdb
@@ -19,7 +18,6 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFra
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFramework.dll
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
-C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Unidade.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Login.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.Index.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\bin\Debug\Sistema Condominio.exe.config
@@ -43,5 +41,14 @@ C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condomin
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.VeiculoCadastro.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorPesquisar.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UnidadeCadastro.resources
 C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.RelacaoMoradorLista.resources
+=======
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorPesquisar.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UnidadeCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.VeiculoCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.CorpoADMCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.FuncionarioCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UsuarioCadastro.resources
+>>>>>>> be16d865bac266947900242f3ca638c974651826
