@@ -17,7 +17,6 @@ namespace Sistema_Condominio.View
 {
     public partial class Index : MetroForm
     {
-        private unidade unidade;
         private MoradorDAO moradordao;
         private UnidadeDAO unidadeDao;
 
@@ -203,6 +202,13 @@ namespace Sistema_Condominio.View
             UnidadeCadastro formUnidade = new UnidadeCadastro(new unidade(), unidadeDao, "cadastrar");
             formUnidade.ShowDialog();
             carregaDadosUnidade();
+        }
+
+        private void textButtonParentes_Click(object sender, EventArgs e)
+        {
+            var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+            RelacaoMoradorLista parentesMorador = new RelacaoMoradorLista(morador);
+            parentesMorador.ShowDialog();
         }
     }
 }

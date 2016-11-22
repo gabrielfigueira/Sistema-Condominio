@@ -10,12 +10,24 @@ namespace Sistema_Condominio.Dao
     public class RelacaoMoradorDAO
     {
         private BancoDeDados banco;
+        private relacao_morador relacao_morador;
 
-        //Metodo que lista os parentes do morador selecionado
-       // public List<morador> listaMorador(morador morador)
-       // {
-           // var resu = banco.relacao_morador.Where(m => m.MORADOR_ID == morador.ID);
-          //  return resu.ToList();
-       // }
+           public RelacaoMoradorDAO()
+        {
+            banco = new BancoDeDados();
+        }
+
+        public void cadastrarRelacaoMorador(relacao_morador relacao_morador)
+        {            
+            banco.relacao_morador.Add(relacao_morador);
+            banco.SaveChanges();
+        }
+
+        public void excluirRelacaoMorador(relacao_morador relacao_morador)
+        {
+            var parente = banco.relacao_morador.Find(relacao_morador.ID);
+            banco.relacao_morador.Remove(parente);
+            banco.SaveChanges();
+        }
     }
 }

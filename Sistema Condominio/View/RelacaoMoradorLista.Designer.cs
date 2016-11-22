@@ -30,6 +30,7 @@
         {
             this.dataGridRelacaoMorador = new System.Windows.Forms.DataGridView();
             this.metroTextButtonCadastrar = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
+            this.textButtonExcluir = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRelacaoMorador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,12 +54,26 @@
             this.metroTextButtonCadastrar.Text = "Cadastrar";
             this.metroTextButtonCadastrar.UseSelectable = true;
             this.metroTextButtonCadastrar.UseVisualStyleBackColor = true;
+            this.metroTextButtonCadastrar.Click += new System.EventHandler(this.metroTextButtonCadastrar_Click);
+            // 
+            // textButtonExcluir
+            // 
+            this.textButtonExcluir.Image = null;
+            this.textButtonExcluir.Location = new System.Drawing.Point(113, 282);
+            this.textButtonExcluir.Name = "textButtonExcluir";
+            this.textButtonExcluir.Size = new System.Drawing.Size(75, 23);
+            this.textButtonExcluir.TabIndex = 13;
+            this.textButtonExcluir.Text = "Excluir";
+            this.textButtonExcluir.UseSelectable = true;
+            this.textButtonExcluir.UseVisualStyleBackColor = true;
+            this.textButtonExcluir.Click += new System.EventHandler(this.textButtonExcluir_Click);
             // 
             // RelacaoMoradorLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 322);
+            this.Controls.Add(this.textButtonExcluir);
             this.Controls.Add(this.metroTextButtonCadastrar);
             this.Controls.Add(this.dataGridRelacaoMorador);
             this.Name = "RelacaoMoradorLista";
@@ -73,5 +88,6 @@
 
         private System.Windows.Forms.DataGridView dataGridRelacaoMorador;
         private MetroFramework.Controls.MetroTextBox.MetroTextButton metroTextButtonCadastrar;
+        private MetroFramework.Controls.MetroTextBox.MetroTextButton textButtonExcluir;
     }
 }

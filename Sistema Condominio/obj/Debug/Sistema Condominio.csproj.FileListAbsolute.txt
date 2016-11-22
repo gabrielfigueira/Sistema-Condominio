@@ -52,3 +52,7 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.FuncionarioCadastro.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UsuarioCadastro.resources
 >>>>>>> be16d865bac266947900242f3ca638c974651826
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.CorpoADMCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.FuncionarioCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UsuarioCadastro.resources
+C:\Users\Gabriel Figueira\Documents\Visual Studio 2015\Projects\Sistema Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.RelacaoMoradorCadastro.resources
