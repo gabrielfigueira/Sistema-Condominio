@@ -41,7 +41,7 @@ namespace Sistema_Condominio.View
 
         }
 
-        
+
         private void tbQtdComodo_Click(object sender, EventArgs e)
         {
 
@@ -51,13 +51,11 @@ namespace Sistema_Condominio.View
         {
 
         }
-              
+
 
         private void Index_Load(object sender, EventArgs e)
         {
             carregaDadosMorador(); //Carregando dados do morador 
-            carregaDadosVeiculos(); // Carregar Dados Veiculo
-            carregaDadosUnidade();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -180,7 +178,7 @@ namespace Sistema_Condominio.View
             BancoDeDados banco = new BancoDeDados();
             VeiculoDAO veiculodao = new VeiculoDAO();
             var veiculo = (veiculo)dataGridVeiculo.CurrentRow.DataBoundItem;
-            var alterar = veiculodao.visualizarVeiculo(veiculo);           
+            var alterar = veiculodao.visualizarVeiculo(veiculo);
 
             VeiculoCadastro formVeiculo = new VeiculoCadastro(alterar, veiculodao, "alterar"); //chama formulario            
             formVeiculo.ShowDialog();// Show dialog chama de forma assincrona
@@ -209,6 +207,50 @@ namespace Sistema_Condominio.View
             var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
             RelacaoMoradorLista parentesMorador = new RelacaoMoradorLista(morador);
             parentesMorador.ShowDialog();
+        }
+
+        private void textButtonVisita_Click(object sender, EventArgs e)
+        {
+            var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+            VisitaLista visitalista = new VisitaLista(morador);
+            visitalista.ShowDialog();
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPageUnidade)
+            {
+                carregaDadosUnidade();
+            }
+            else if (tabControl1.SelectedTab == tabPageVeiculos)
+            {
+                carregaDadosVeiculos();
+            }
+            else if (tabControl1.SelectedTab == tabPageAdministracao)
+            {
+
+            }
+            else if (tabControl1.SelectedTab == tabPageFuncionarios)
+            {
+
+            }
+            else if (tabControl1.SelectedTab == tabPageUsuarios)
+            {
+
+            }
+            else if (tabControl1.SelectedTab == tabPageProprietario)
+            {
+
+            }
+            else if (tabControl1.SelectedTab == tabPageFeedback)
+            {
+
+
+            }
+            else if (tabControl1.SelectedTab == tabPageReserva)
+            {
+
+            }
         }
     }
 }
