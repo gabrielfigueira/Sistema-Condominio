@@ -35,7 +35,10 @@ namespace Sistema_Condominio.View
 
         private void VeiculoCadastro_Load(object sender, EventArgs e)
         {
-
+            if (metodo == "alterar")
+            {
+                preencheFormularioVeiculo();
+            }
         }
 
         private void btPesquisar_Click(object sender, EventArgs e)
@@ -52,6 +55,10 @@ namespace Sistema_Condominio.View
         }
         private void carregaVeiculo()
         {
+            if (veiculo == null)
+            {
+               veiculo = new veiculo();
+            }
             veiculo.MORADOR_ID   = morador_id;
             veiculo.MARCA        = textBoxMarca.Text;
             veiculo.MODELO       = textBoxModelo.Text;
@@ -86,6 +93,21 @@ namespace Sistema_Condominio.View
             textBoxNrPlaca.Text          = veiculo.N_PLACA;
             textBoxVagaAlugada.Text      = veiculo.VAGA_ALUGADA.ToString();
 
+        }
+
+        private void textButtonAlterar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                carregaVeiculo();
+                veiculodao.alterarVeiculo(veiculo);
+                MessageBox.Show("Alterei");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.InnerException.Message);
+            }
         }
     }
 }
