@@ -1,3 +1,7 @@
 \Sistema Condominio\bin\Debug
 *.exe
 *.pdb
+*.suo
+*.Cache
+*.txt
+*.cache
