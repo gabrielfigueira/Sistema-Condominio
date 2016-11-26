@@ -96,8 +96,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\FeedbackDAO.cs" />
     <Compile Include="Dao\MoradorDAO.cs" />
+    <Compile Include="Dao\UnidadeMoradorDAO.cs" />
+    <Compile Include="Dao\ProprietarioDAO.cs" />
     <Compile Include="Dao\RelacaoMoradorDAO.cs" />
+    <Compile Include="Dao\ReservaDAO.cs" />
     <Compile Include="Dao\UnidadeDAO.cs" />
     <Compile Include="Dao\VeiculoDAO.cs" />
     <Compile Include="Dao\VisitaDAO.cs" />
@@ -170,6 +174,12 @@
     <Compile Include="View\MoradorPesquisar.Designer.cs">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MoradorUnidadeLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MoradorUnidadeLista.Designer.cs">
+      <DependentUpon>MoradorUnidadeLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\RelacaoMoradorCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +197,12 @@
     </Compile>
     <Compile Include="View\UnidadeCadastro.Designer.cs">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UnidadeMoradorCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UnidadeMoradorCadastro.Designer.cs">
+      <DependentUpon>UnidadeMoradorCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UsuarioCadastro.cs">
       <SubType>Form</SubType>
@@ -246,6 +262,9 @@
     <EmbeddedResource Include="View\MoradorPesquisar.resx">
       <DependentUpon>MoradorPesquisar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\MoradorUnidadeLista.resx">
+      <DependentUpon>MoradorUnidadeLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\RelacaoMoradorCadastro.resx">
       <DependentUpon>RelacaoMoradorCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UnidadeCadastro.resx">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UnidadeMoradorCadastro.resx">
+      <DependentUpon>UnidadeMoradorCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UsuarioCadastro.resx">
       <DependentUpon>UsuarioCadastro.cs</DependentUpon>

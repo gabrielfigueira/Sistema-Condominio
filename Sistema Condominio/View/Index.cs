@@ -152,6 +152,41 @@ namespace Sistema_Condominio.View
             dataGridVeiculo.DataSource = lista;
         }
 
+        private void carregaDadosCorpoAdm()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.orcamentos.Include(c => c.corpo_adm).ToList();
+            dataGridAdministracao.DataSource = lista;
+        }
+
+        private void carregaDadosFuncionarios()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.funcionario.Include(f => f.pessoa).ToList();
+            dataGridFuncionario.DataSource = lista;
+        }
+
+        private void carregaDadosProprietarios()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.proprietario.Include(p => p.pessoa).Include(p => p.unidade).ToList();
+            dataGridViewProprietario.DataSource = lista;
+        }
+
+        private void carregaDadosFeedbacks()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.feedbacks.Include(f => f.morador).ToList();
+            dataGridFeedback.DataSource = lista;
+        }
+
+        private void carregaDadosReservas()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.reserva.Include(r => r.morador).ToList();
+            dataGridReserva.DataSource = lista;
+        }
+
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -216,6 +251,14 @@ namespace Sistema_Condominio.View
             visitalista.ShowDialog();
         }
 
+
+        private void metroTextButton5_Click_1(object sender, EventArgs e)
+        {
+            var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
+            MoradorUnidadeLista moradorUnidadeLista = new MoradorUnidadeLista(morador);
+            moradorUnidadeLista.ShowDialog();
+        }
+
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControl1.SelectedTab == tabPageUnidade)
@@ -228,11 +271,11 @@ namespace Sistema_Condominio.View
             }
             else if (tabControl1.SelectedTab == tabPageAdministracao)
             {
-
+                carregaDadosCorpoAdm();
             }
             else if (tabControl1.SelectedTab == tabPageFuncionarios)
             {
-
+                carregaDadosFuncionarios();
             }
             else if (tabControl1.SelectedTab == tabPageUsuarios)
             {
@@ -240,17 +283,23 @@ namespace Sistema_Condominio.View
             }
             else if (tabControl1.SelectedTab == tabPageProprietario)
             {
-
+                carregaDadosProprietarios();
             }
             else if (tabControl1.SelectedTab == tabPageFeedback)
             {
-
+                carregaDadosFeedbacks();
 
             }
             else if (tabControl1.SelectedTab == tabPageReserva)
             {
-
+                carregaDadosReservas();
             }
         }
+
+        private void dataGridFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

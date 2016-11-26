@@ -71,7 +71,7 @@ namespace Sistema_Condominio.Model
         public bool? ATIVO { get; set; }
 
         [NotMapped]
-        [DisplayName("Observações")]
+        [DisplayName("Descrição")]
         public string descricao { get { return tipoUnidade.DESCRICAO; } }
 
     }
