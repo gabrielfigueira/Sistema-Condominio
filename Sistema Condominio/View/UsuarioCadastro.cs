@@ -22,5 +22,10 @@ namespace Sistema_Condominio.View
         {
 
         }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

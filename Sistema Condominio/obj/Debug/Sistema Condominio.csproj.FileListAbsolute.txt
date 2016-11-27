@@ -63,3 +63,5 @@ C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema Condominio.csproj.GenerateResource.Cache
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.MoradorUnidadeLista.resources
 C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UnidadeMoradorCadastro.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.UnidadePesquisar.resources
+C:\Users\Edmar\Projetos\Sistema-Condominio\Sistema Condominio\obj\Debug\Sistema_Condominio.View.ReservaCadastro.resources

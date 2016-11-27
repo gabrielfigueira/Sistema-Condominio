@@ -59,7 +59,7 @@ namespace Sistema_Condominio.View
             {
                veiculo = new veiculo();
             }
-            veiculo.MORADOR_ID   = morador_id;
+            veiculo.MORADOR_ID   = veiculo.MORADOR_ID;
             veiculo.MARCA        = textBoxMarca.Text;
             veiculo.MODELO       = textBoxModelo.Text;
             veiculo.COR          = textBoxCor.Text;

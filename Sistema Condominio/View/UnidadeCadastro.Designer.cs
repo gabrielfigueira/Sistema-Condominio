@@ -41,6 +41,7 @@
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // htmlLabel1
@@ -56,6 +57,7 @@
             this.htmlLabel1.Size = new System.Drawing.Size(418, 48);
             this.htmlLabel1.TabIndex = 10;
             this.htmlLabel1.Text = "Cadastro de Unidade";
+            this.htmlLabel1.Click += new System.EventHandler(this.htmlLabel1_Click);
             // 
             // checkBoxUnidade
             // 
@@ -233,5 +235,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel10;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

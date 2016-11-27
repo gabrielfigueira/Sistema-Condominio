@@ -26,6 +26,19 @@ namespace Sistema_Condominio.Dao
             banco.SaveChanges();
         }
 
+        public void excluirProprietario(proprietario proprietario)
+        {
+            var ve = banco.proprietario.Find(proprietario.ID);
+            banco.proprietario.Remove(ve);
+            banco.SaveChanges();
+        }
+
+        public proprietario visualizarProprietario(proprietario proprietario)
+        {
+            var prop = banco.proprietario.Find(proprietario.ID);
+            return prop;
+        }
+
 
     }
 }

@@ -247,6 +247,10 @@
             this.buttonAlterarMorador.UseVisualStyleBackColor = true;
             this.buttonAlterarMorador.Click += new System.EventHandler(this.buttonAlterarMorador_Click);
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // MoradorCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

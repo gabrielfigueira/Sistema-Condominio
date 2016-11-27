@@ -11,10 +11,12 @@ namespace Sistema_Condominio.Dao
     public class VeiculoDAO
     {
         private BancoDeDados banco;
-        public VeiculoDAO() {
+
+        public VeiculoDAO()
+        {
             banco = new BancoDeDados();
         }
-        
+
         public void cadastrarVeiculo(veiculo veiculo)
         {
             banco.veiculo.Add(veiculo);
@@ -30,8 +32,8 @@ namespace Sistema_Condominio.Dao
 
         public List<veiculo> pesquisarVeiculo(String pesquisa)
         {
-              var resu = banco.veiculo.Where(v => v.COR.Contains(pesquisa));
-              return resu.ToList();
+            var resu = banco.veiculo.Where(v => v.COR.Contains(pesquisa));
+            return resu.ToList();
 
         }
 

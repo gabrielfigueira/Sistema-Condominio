@@ -32,7 +32,6 @@ namespace Sistema_Condominio.View
             InitializeComponent();
         }
 
-
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -72,12 +71,33 @@ namespace Sistema_Condominio.View
 
         private void carregaUnidade()
         {
+            if (unidade.grupoUnidade == null)
+            {
+                unidade.grupoUnidade = new grupo_unidade();
+            }
+
+            if (unidade.tipoUnidade == null)
+            {
+                unidade.tipoUnidade = new tipo_unidade();
+            }
+
             unidade.ATIVO = checkBoxUnidade.Checked;
             unidade.grupo_unidade.DESCRICAO = cbTipoImovel.Text;
             unidade.grupo_unidade.QNT_APARTAMENTO = int.Parse(tbQtdApartamento.Text);
             unidade.tipo_unidade.QNTD_COMODO = int.Parse(tbQtdComodo.Text);
             unidade.tipo_unidade.DESCRICAO = tbDescricao.Text;
             unidade.tipo_unidade.ANDAR = tbAndar.Text;
+        }
+
+
+        private void preencheFormularioUnidade()
+        {
+            checkBoxUnidade.Checked = Convert.ToBoolean(unidade.ATIVO);
+            cbTipoImovel.Text = unidade.grupo_unidade.DESCRICAO;
+            tbQtdApartamento.Text = Convert.ToString(unidade.grupo_unidade.QNT_APARTAMENTO);
+            tbQtdComodo.Text = Convert.ToString(unidade.tipo_unidade.QNTD_COMODO);
+            tbDescricao.Text = unidade.tipo_unidade.DESCRICAO;
+            tbAndar.Text = unidade.tipo_unidade.ANDAR;
         }
 
 
@@ -117,7 +137,18 @@ namespace Sistema_Condominio.View
 
         }
 
+
+       
+
         private void Unidade_Load(object sender, EventArgs e)
+        {
+            if (metodo == "alterar")
+            {
+                preencheFormularioUnidade();
+            }
+        }
+
+        private void htmlLabel1_Click(object sender, EventArgs e)
         {
 
         }

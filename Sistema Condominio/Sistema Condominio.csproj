@@ -192,6 +192,12 @@
     <Compile Include="View\RelacaoMoradorLista.Designer.cs">
       <DependentUpon>RelacaoMoradorLista.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ReservaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReservaCadastro.Designer.cs">
+      <DependentUpon>ReservaCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UnidadeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,12 @@
     </Compile>
     <Compile Include="View\UnidadeMoradorCadastro.Designer.cs">
       <DependentUpon>UnidadeMoradorCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UnidadePesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UnidadePesquisar.Designer.cs">
+      <DependentUpon>UnidadePesquisar.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UsuarioCadastro.cs">
       <SubType>Form</SubType>
@@ -271,11 +283,17 @@
     <EmbeddedResource Include="View\RelacaoMoradorLista.resx">
       <DependentUpon>RelacaoMoradorLista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ReservaCadastro.resx">
+      <DependentUpon>ReservaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UnidadeCadastro.resx">
       <DependentUpon>UnidadeCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UnidadeMoradorCadastro.resx">
       <DependentUpon>UnidadeMoradorCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UnidadePesquisar.resx">
+      <DependentUpon>UnidadePesquisar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UsuarioCadastro.resx">
       <DependentUpon>UsuarioCadastro.cs</DependentUpon>

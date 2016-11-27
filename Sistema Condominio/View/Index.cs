@@ -145,6 +145,13 @@ namespace Sistema_Condominio.View
             dataGridUnidade.DataSource = lista;
         }
 
+        private void carregaDadosReserva()
+        {
+            BancoDeDados banco = new BancoDeDados();
+            var lista = banco.reserva.ToList();
+            dataGridReserva.DataSource = lista;
+        }        
+
         private void carregaDadosVeiculos()
         {
             BancoDeDados banco = new BancoDeDados();
@@ -155,7 +162,8 @@ namespace Sistema_Condominio.View
         private void carregaDadosCorpoAdm()
         {
             BancoDeDados banco = new BancoDeDados();
-            var lista = banco.orcamentos.Include(c => c.corpo_adm).ToList();
+            //var lista = banco.orcamentos.Include(c => c.corpo_adm).ToList(); tinha feito de orçamento, 
+            var lista = banco.corpo_adm.Include(c => c.cargo_corpo_admin).Include(p => p.pessoa).ToList();
             dataGridAdministracao.DataSource = lista;
         }
 
@@ -180,12 +188,7 @@ namespace Sistema_Condominio.View
             dataGridFeedback.DataSource = lista;
         }
 
-        private void carregaDadosReservas()
-        {
-            BancoDeDados banco = new BancoDeDados();
-            var lista = banco.reserva.Include(r => r.morador).ToList();
-            dataGridReserva.DataSource = lista;
-        }
+       
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -292,7 +295,7 @@ namespace Sistema_Condominio.View
             }
             else if (tabControl1.SelectedTab == tabPageReserva)
             {
-                carregaDadosReservas();
+                carregaDadosReserva();
             }
         }
 
@@ -301,5 +304,105 @@ namespace Sistema_Condominio.View
 
         }
 
+        private void metroTextButton3_Click_2(object sender, EventArgs e)
+        {
+            BancoDeDados banco = new BancoDeDados();
+            UnidadeDAO unidadedao = new UnidadeDAO();
+            var unidade = (unidade)dataGridUnidade.CurrentRow.DataBoundItem;
+            var alterar = unidadedao.visualizarUnidade(unidade);
+
+            UnidadeCadastro formUnidade = new UnidadeCadastro(alterar, unidadedao, "alterar"); //chama formulario            
+            formUnidade.ShowDialog();// Show dialog chama de forma assincrona
+            carregaDadosUnidade();
+        }
+
+        private void tbExcluirUnidade_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var unidade = (unidade)dataGridUnidade.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
+                UnidadeDAO unidadedao = new UnidadeDAO();
+                unidadedao.excluirUnidade(unidade);
+                //MessageBox.Show("Registro excluído com sucesso!");
+                carregaDadosUnidade();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btExcluirReserva_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var reserva = (reserva)dataGridReserva.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
+                ReservaDAO reservadao = new ReservaDAO();
+                reservadao.excluirReserva(reserva);
+                MessageBox.Show("Registro excluído com sucesso!");
+                carregaDadosReserva();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btCadastrarReserva_Click(object sender, EventArgs e)
+        {
+            ReservaCadastro reservacadastro = new ReservaCadastro();
+            reservacadastro.ShowDialog();
+            carregaDadosReserva();
+        }
+
+        private void btAlterarReserva_Click(object sender, EventArgs e)
+        {
+            BancoDeDados banco = new BancoDeDados();
+            ReservaDAO reservadao = new ReservaDAO();
+            var reserva = (reserva)dataGridReserva.CurrentRow.DataBoundItem;
+            var alterar = reservadao.visualizarReserva(reserva);
+
+            ReservaCadastro formReserva = new ReservaCadastro(alterar, reservadao, "alterar"); //chama formulario            
+            formReserva.ShowDialog();// Show dialog chama de forma assincrona
+            carregaDadosReserva();
+        }
+
+        private void tabPageAdministracao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btExcluirFeedback_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var feedback = (feedbacks)dataGridFeedback.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
+                FeedbackDAO feedbackdao = new FeedbackDAO();
+                feedbackdao.excluirFeedback(feedback);
+                MessageBox.Show("Registro excluído com sucesso!");
+                carregaDadosFeedbacks();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btExcluirProprietario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var proprietario = (proprietario)dataGridViewProprietario.CurrentRow.DataBoundItem;   //Pegar linha selecionado              
+                ProprietarioDAO proprietariodao = new ProprietarioDAO();
+                proprietariodao.excluirProprietario(proprietario);
+                MessageBox.Show("Registro excluído com sucesso!");
+                carregaDadosProprietarios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

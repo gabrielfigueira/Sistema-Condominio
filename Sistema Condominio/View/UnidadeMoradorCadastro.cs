@@ -28,6 +28,13 @@ namespace Sistema_Condominio.View
             InitializeComponent();
         }
 
+        public UnidadeMoradorCadastro(morador morador, unidade unidade)
+        {
+            this.morador = morador;
+            this.unidade = unidade;
+            InitializeComponent();
+        }
+
         public UnidadeMoradorCadastro(morador morador, unidade unidade, UnidadeMoradorDAO unidadeMoradorDAO, string metodo)
         {
             this.metodo = metodo;
@@ -51,8 +58,16 @@ namespace Sistema_Condominio.View
         {
             MoradorPesquisar moradorPesquisar = new MoradorPesquisar();
             moradorPesquisar.ShowDialog();
-            metroTextBoxMoradorNome.Text = moradorPesquisar.retornarMorador().pessoa.NOME;
+            metroTextBoxNome.Text = moradorPesquisar.retornarMorador().pessoa.NOME;
             morador_id = moradorPesquisar.retornarMorador().ID;
+        }
+
+        private void metroTextButton1_Click(object sender, EventArgs e)
+        {
+            UnidadePesquisar unidadePesquisar = new UnidadePesquisar();
+            unidadePesquisar.ShowDialog();
+            metroTextUnidade.Text = Convert.ToString(unidadePesquisar.retornarUnidade().grupoUnidade.ID);
+            unidade_id = unidadePesquisar.retornarUnidade().ID;
         }
 
         private void carregaUnidadeMorador()
@@ -86,15 +101,11 @@ namespace Sistema_Condominio.View
 
         private void preencheFormularioUnidadeMorador()
         {
-            //metroTextBoxMoradorNome.Text = unidadeMora.morador.pessoa.NOME;
-            //textBoxMarca.Text = veiculo.MARCA;
-            //textBoxModelo.Text = veiculo.MODELO;
-            //textBoxCor.Text = veiculo.COR;
-            //textBoxNrPlaca.Text = veiculo.N_PLACA;
-            //textBoxVagaAlugada.Text = veiculo.VAGA_ALUGADA.ToString();
+            metroTextBoxNome.Text = unidadeMorador.morador.pessoa.NOME;
+            metroTextUnidade.Text = unidadeMorador.unidade.ID.ToString();
 
         }
 
-
+     
     }
 }

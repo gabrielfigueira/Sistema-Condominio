@@ -22,8 +22,7 @@ namespace Sistema_Condominio.View
         public MoradorCadastro()
         {
             InitializeComponent();
-        }
-        
+        }        
 
         public MoradorCadastro(morador morador, MoradorDAO moradordao, string metodo) // Sobrecarga de metodo para passar parametro de morador
         {
@@ -134,6 +133,11 @@ namespace Sistema_Condominio.View
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
 
         }
     }

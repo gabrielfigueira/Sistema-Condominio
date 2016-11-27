@@ -44,6 +44,7 @@
             this.dataGridMorador.ReadOnly = true;
             this.dataGridMorador.Size = new System.Drawing.Size(636, 212);
             this.dataGridMorador.TabIndex = 9;
+            this.dataGridMorador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridMorador_CellContentClick);
             // 
             // textFieldPesquisarMorador
             // 
@@ -74,6 +75,7 @@
             this.textFieldPesquisarMorador.WaterMark = "Pesquise aqui...";
             this.textFieldPesquisarMorador.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textFieldPesquisarMorador.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.textFieldPesquisarMorador.Click += new System.EventHandler(this.textFieldPesquisarMorador_Click);
             // 
             // btPesquisar
             // 

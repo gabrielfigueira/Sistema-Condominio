@@ -12,24 +12,23 @@ namespace Sistema_Condominio.Dao
     {
         private BancoDeDados banco;
 
-        public MoradorDAO() {
+        public MoradorDAO()
+        {
             banco = new BancoDeDados();
-    }
-        public void cadastrarMorador(morador morador)
-        {          
+        }
 
+        public void cadastrarMorador(morador morador)
+        {
             banco.pessoa.Add(morador.pessoa);
             banco.SaveChanges();
             morador.PESSOA_ID = morador.pessoa.ID;
             banco.morador.Add(morador);
             banco.SaveChanges();
-
         }
 
         public void excluirMorador(morador morador)
         {
-            
-            var pessoa = banco.pessoa.Find( morador.PESSOA_ID);
+            var pessoa = banco.pessoa.Find(morador.PESSOA_ID);
             var mora = banco.morador.Find(morador.ID);
             banco.morador.Remove(mora);
             banco.SaveChanges();
@@ -39,25 +38,23 @@ namespace Sistema_Condominio.Dao
 
         public List<morador> pesquisarMorador(String pesquisa)
         {
-            
             var resu = banco.morador.Where(m => m.pessoa.NOME.Contains(pesquisa));
             return resu.ToList();
         }
 
-        public morador visualizarMorador(morador morador) {
-            
+        public morador visualizarMorador(morador morador)
+        {
             var mora = banco.morador.Find(morador.ID);
             return mora;
         }
 
         public void alterarMorador(morador morador)
-        {            
+        {
             banco.Entry(morador).State = EntityState.Modified;
             banco.SaveChanges();
             var pessoa = banco.pessoa.Find(morador.PESSOA_ID);
             banco.Entry(pessoa).State = System.Data.Entity.EntityState.Modified;
             banco.SaveChanges();
         }
-
     }
 }

@@ -17,6 +17,7 @@ namespace Sistema_Condominio.View
     public partial class MoradorPesquisar : MetroForm
     {
         public morador morador;
+
         public MoradorPesquisar()
         {
             InitializeComponent();
@@ -50,9 +51,20 @@ namespace Sistema_Condominio.View
             this.Close();
         }
 
-        public morador retornarMorador() {
+        public morador retornarMorador()
+        {
             var morador = (morador)dataGridMorador.CurrentRow.DataBoundItem;
             return morador;
+        }
+
+        private void dataGridMorador_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textFieldPesquisarMorador_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
